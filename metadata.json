@@ -11,5 +11,18 @@
         "created_at": "2026-11-21T14:19:35.108Z",
         "updated_at": "2026-11-21T14:19:35.108Z",
         "type": "plugin"
+    },
+    {
+        "id": "jJWEG3p3WfEZrn-a_rpXpqctpjSsdB46",
+        "plugin": "aibrowser-chat",
+        "language": "zh-cn",
+        "version": "1.7.5",
+        "supported_versions": "1.7.5",
+        "title": "OmniChat",
+        "description": "OmniChat Simplified Chinese Localization & Tweaks",
+        "hash": "6118a3616118a3616118a3616118a361",
+        "created_at": "2026-11-21T14:40:25.010Z",
+        "updated_at": "2026-11-21T14:40:25.010Z",
+        "type": "plugin"
     }
 ]
