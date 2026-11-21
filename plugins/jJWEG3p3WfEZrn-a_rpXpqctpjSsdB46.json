@@ -1,0 +1,2038 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "aibrowser-chat",
+        "version": "1.0.0",
+        "title": "OmniChat",
+        "description": "OmniChat Simplified Chinese Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "1.7.5",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "placeholder",
+                    "source": "Ask ollama anything...",
+                    "target": "向 Ollama 提问任何问题…"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Reload the AI page",
+                    "target": "重新加载 AI 页面"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Add notes or folders to context",
+                    "target": "将笔记或文件夹添加到上下文"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Insert a prompt template into the chat",
+                    "target": "将提示词模板插入聊天"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Send context into the active AI chat (clipboard fallback if needed)",
+                    "target": "将上下文发送到当前 AI 聊天（必要时回退到剪贴板）"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Copy context to the clipboard",
+                    "target": "将上下文复制到剪贴板"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Copy AI text first, then save it to your vault",
+                    "target": "先复制 AI 文本，再将其保存到您的仓库"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Auto",
+                    "target": "自动"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "light",
+                    "target": "浅色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Light",
+                    "target": "浅色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "dark",
+                    "target": "深色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Dark",
+                    "target": "深色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "Sorry to see you go. If you have a moment, please ",
+                    "target": "舍不得您走。如果您有空，请"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": " — it helps us improve. You can skip this.",
+                    "target": "——这有助于我们改进。您可以跳过。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat: failed to save note",
+                    "target": "OmniChat：保存笔记失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat: failed to append to note",
+                    "target": "OmniChat：追加到笔记失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat: failed to add context",
+                    "target": "OmniChat：添加上下文失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat: failed to copy context",
+                    "target": "OmniChat：复制上下文失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat: Failed to clear browser session",
+                    "target": "OmniChat：清除浏览器会话失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Open",
+                    "target": "打开"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Open folder",
+                    "target": "打开文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "+ add",
+                    "target": "+ 添加"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Reset to Chrome",
+                    "target": "重置为 Chrome"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Clear cache & cookies",
+                    "target": "清除缓存和 Cookie"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show in the service selector.",
+                    "target": "在服务选择器中显示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "The base URL for your local or remote ollama instance (default: http://127.0.0.1:11434).",
+                    "target": "本地或远程 Ollama 实例的基础 URL（默认：http://127.0.0.1:11434）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Header colour scheme — auto follows Obsidian.",
+                    "target": "标题栏配色方案 — 自动跟随 Obsidian。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Which AI opens when the portal first loads.",
+                    "target": "聊天面板首次打开时加载哪个 AI。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Which AI opens in the split panel by default.",
+                    "target": "默认在分屏面板中打开哪个 AI。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Restore the portal when Obsidian loads.",
+                    "target": "Obsidian 启动时恢复聊天面板。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Silently reload after this many idle minutes. 0 = off.",
+                    "target": "空闲达到指定分钟数后自动静默刷新。0 表示关闭。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Open a second portal panel — each remembers its own service.",
+                    "target": "打开另一个聊天面板——每个面板都会记住自己的服务。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Enable injecting editor selections into the active AI service.",
+                    "target": "允许将编辑器中选中的文本注入当前 AI 服务。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add the current note to context when the portal opens.",
+                    "target": "打开聊天面板时自动将当前笔记添加到上下文。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Remove the YAML --- block from notes before sending as context.",
+                    "target": "将笔记作为上下文发送前，先移除其中的 YAML — 块。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Clear all context items after clicking add.",
+                    "target": "点击添加后清除所有上下文项。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Text prepended to every context send. Leave blank to send notes as-is.",
+                    "target": "每次发送上下文时附加在开头的文本。留空则按原样发送笔记。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Character limit for context sent to AI.",
+                    "target": "发送给 AI 的上下文字符数限制。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Vault folder for notes created via the save buttons.",
+                    "target": "保存按钮所创建笔记的存放文件夹。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Save into daily subfolders — e.g. AI notes/2026-06-01/response.md.",
+                    "target": "保存到每日子文件夹——例如 AI notes/2026-06-01/response.md。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Reconstruct tables and code blocks when saving AI responses to your vault.",
+                    "target": "将 AI 回复保存到您的仓库时，重建其中的表格和代码块。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Add any AI tool by URL — it appears in the service selector.",
+                    "target": "通过 URL 添加任何 AI 工具——它会出现在服务选择器中。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "One-click prompts that inject text into the active AI service. Variables: {{selection}}, {{title}}, {{path}}, {{tags}}, {{date}}.",
+                    "target": "一键提示词，将文本注入当前活动的 AI 服务。变量：{{selection}}、{{title}}、{{path}}、{{tags}}、{{date}}。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "No templates yet — add one to get started.",
+                    "target": "暂无模板——添加一个以开始使用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Text inserted into the AI input.",
+                    "target": "插入到 AI 输入框中的文本。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Overrides the browser user-agent string. Leave blank to use authentic Chrome desktop browser emulation.",
+                    "target": "覆写浏览器 user-agent 字符串。留空以使用真实的 Chrome 桌面浏览器模拟。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Clears cookies, cache, and storage for embedded AI web sessions. Useful if a login or session becomes corrupted.",
+                    "target": "清除嵌入式 AI 网页会话的 cookie、缓存和存储。当登录或会话损坏时很有用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "AI services",
+                    "target": "AI 服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Ollama API URL",
+                    "target": "Ollama API URL"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Appearance & behaviour",
+                    "target": "外观与行为"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Theme",
+                    "target": "主题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default service",
+                    "target": "默认服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default split panel service",
+                    "target": "默认分屏面板服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Open on startup",
+                    "target": "启动时打开"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-refresh (minutes)",
+                    "target": "自动刷新（分钟）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Open split panel",
+                    "target": "打开分屏面板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Context & notes",
+                    "target": "上下文与笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Send selected text to AI",
+                    "target": "将选中文本发送给 AI"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-add active note on open",
+                    "target": "打开面板时自动添加当前笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Strip frontmatter",
+                    "target": "去除前置元数据"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-clear context after send",
+                    "target": "发送后自动清除上下文"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Context prefix",
+                    "target": "上下文前缀"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Max context length",
+                    "target": "最大上下文长度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Save folder",
+                    "target": "保存文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Organise saves by date",
+                    "target": "按日期分文件夹保存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-format AI response",
+                    "target": "自动格式化 AI 回复"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Custom services",
+                    "target": "自定义服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Add custom service",
+                    "target": "添加自定义服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Prompt templates",
+                    "target": "提示词模板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Add template",
+                    "target": "添加模板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Prompt",
+                    "target": "提示词"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Browser & authentication",
+                    "target": "浏览器与身份验证"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Custom user-agent",
+                    "target": "自定义 User-Agent"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Clear AI browser data",
+                    "target": "清除 AI 浏览器数据"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Pick a template…",
+                    "target": "选择模板…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "E.g. Here are my notes, please help me:",
+                    "target": "例如：以下是我的笔记，请帮我："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "AI notes",
+                    "target": "AI 笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Label",
+                    "target": "标签"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter URL…",
+                    "target": "输入 URL…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Title (e.g. Summarise)",
+                    "target": "标题（例如：总结）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Prompt text…",
+                    "target": "提示文本…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Search notes by name or content…",
+                    "target": "按名称或内容搜索笔记…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Type to search folders…",
+                    "target": "输入以搜索文件夹…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Type to search notes…",
+                    "target": "输入以搜索笔记…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Active note",
+                    "target": "当前笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Open tabs",
+                    "target": "打开的标签页"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Pick note…",
+                    "target": "选择笔记…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Pick folder…",
+                    "target": "选择文件夹…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Add to OmniChat context",
+                    "target": "添加到 OmniChat 上下文"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "Send selected text to AI",
+                    "target": "将选中文本发送给 AI"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Reveal in file explorer",
+                    "target": "在文件资源管理器中显示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Remove",
+                    "target": "移除"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "Delete template",
+                    "target": "删除模板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "Invalid URL attempted:",
+                    "target": "尝试了无效的 URL："
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Select some text first.",
+                    "target": "请先选择一些文本。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No prompt templates configured — add one in settings.",
+                    "target": "未配置提示词模板 — 请在设置中添加一个。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "A custom service with this URL already exists.",
+                    "target": "已存在使用此 URL 的自定义服务。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "User-agent reset to default Chrome.",
+                    "target": "User-Agent 已重置为默认 Chrome。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "AI browser cache & cookies cleared.",
+                    "target": "AI 浏览器缓存和 Cookie 已清除。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Could not clear browser session in this environment.",
+                    "target": "无法在此环境中清除浏览器会话。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No active note open in the editor — open a note, place your cursor, then try again.",
+                    "target": "编辑器中没有打开任何笔记——请先打开笔记并光标定位，然后重试。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Inserted at cursor.",
+                    "target": "已插入到光标处。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Saved to ${l.path}",
+                    "target": "已保存到 ${l.path}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Couldn't save the note — see console for details.",
+                    "target": "无法保存笔记 — 请查看控制台了解详情。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Appended to ${s.path}",
+                    "target": "已追加到 ${s.path}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Couldn't append to the note — see console for details.",
+                    "target": "无法追加到笔记 — 请查看控制台了解详情。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Signed in successfully.",
+                    "target": "登录成功。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Reloading chat with signed-in session…",
+                    "target": "正在使用已登录会话重新加载聊天…"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No model selected or ollama is not running.",
+                    "target": "未选择模型或 Ollama 未运行。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No active file.",
+                    "target": "没有活动文件。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Already in context.",
+                    "target": "已在上下文中。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "\"${e.basename}\" is already in context.",
+                    "target": "\"${e.basename}\" 已在上下文中。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Added \"${e.basename}\" to OmniChat context.",
+                    "target": "已将 \"${e.basename}\" 添加到 OmniChat 上下文。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No open Markdown files.",
+                    "target": "没有打开的 Markdown 文件。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Added ${t} file${t!==1?\"s\":\"\"} to context.",
+                    "target": "已将 ${t} 个文件添加到上下文。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "All open files already in context.",
+                    "target": "所有打开的文件均已在上下文中。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "This template is empty — edit it in settings.",
+                    "target": "此模板为空 — 请在设置中编辑。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Template copied — paste with Cmd+V / Ctrl+V.",
+                    "target": "模板已复制 — 使用 Cmd+V / Ctrl+V 粘贴。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Couldn't insert or copy the template.",
+                    "target": "无法插入或复制模板。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Add some notes to context first.",
+                    "target": "请先向上下文添加一些笔记。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No readable notes found.",
+                    "target": "未找到可读的笔记。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Context truncated — limit reached.",
+                    "target": "上下文已截断 — 已达上限。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Context pasted in chat.",
+                    "target": "上下文已粘贴到聊天中。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Context copied — paste with Cmd+V / Ctrl+V.",
+                    "target": "上下文已复制 — 使用 Cmd+V / Ctrl+V 粘贴。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Couldn't read one or more notes — see console for details.",
+                    "target": "无法读取一个或多个笔记 — 请查看控制台了解详情。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Context copied to clipboard.",
+                    "target": "上下文已复制到剪贴板。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Couldn't copy context — see console for details.",
+                    "target": "无法复制上下文 — 请查看控制台了解详情。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Select the text you want to save in the chat first.",
+                    "target": "请先在聊天中选择要保存的文本。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Selection sent to AI.",
+                    "target": "所选内容已发送给 AI。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Selection copied — paste with Cmd+V / Ctrl+V.",
+                    "target": "所选内容已复制 — 使用 Cmd+V / Ctrl+V 粘贴。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Couldn't send or copy the selection.",
+                    "target": "无法发送或复制所选内容。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Send selected text is disabled — enable it in OmniChat settings.",
+                    "target": "\"发送选中文本\"功能已禁用——请在 OmniChat 设置中启用。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No AI services enabled — enable one in OmniChat settings.",
+                    "target": "未启用任何 AI 服务 — 请在 OmniChat 设置中启用一个。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Switched to ${n.label}",
+                    "target": "已切换到 ${n.label}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Support on Ko-fi",
+                    "target": "在 Ko-fi 上支持"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Sponsor on GitHub",
+                    "target": "在 GitHub 上赞助"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "oc-feedback-actions oc-update-actions",
+                    "target": "oc-feedback-actions oc-update-actions"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "oc-feedback-lead oc-uninstall-lead",
+                    "target": "oc-feedback-lead oc-uninstall-lead"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "oc-support-banner-btn oc-support-kofi-btn",
+                    "target": "oc-support-banner-btn oc-support-kofi-btn"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "oc-support-banner-btn oc-support-github-btn",
+                    "target": "oc-support-banner-btn oc-support-github-btn"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "mod-cta save-dest-btn",
+                    "target": "mod-cta save-dest-btn"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "vc-select-wrap vc-templates-wrap",
+                    "target": "vc-select-wrap vc-templates-wrap"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "vc-item-badge vc-item-badge--${n.type}",
+                    "target": "vc-item-badge vc-item-badge--${n.type}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Something isn't working.",
+                    "target": "有些功能无法正常工作。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Suggest an improvement.",
+                    "target": "建议改进。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Jump between ChatGPT, Claude, Gemini, and more from one sidebar.",
+                    "target": "在一个侧边栏中即可在 ChatGPT、Claude、Gemini 等之间切换。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Highlight text in a note and send it straight into the active chat.",
+                    "target": "在笔记中选中文本，直接发送到当前聊天。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Add notes or folders, then inject them into the chat when you need them.",
+                    "target": "添加笔记或文件夹，需要时将其注入聊天中。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Copy an AI reply and save it as a new note or append to an existing one.",
+                    "target": "复制 AI 回复，并将其保存为新笔记或追加到现有笔记中。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Open a second panel to keep two AI tools side by side.",
+                    "target": "打开第二个面板，让两个 AI 工具并排显示。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Add any AI site by URL so it appears in the same selector.",
+                    "target": "通过 URL 添加任何 AI 网站，使其显示在同一个选择器中。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "id",
+                    "source": "open",
+                    "target": "open"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "id",
+                    "source": "toggle",
+                    "target": "toggle"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "ChatGPT",
+                    "target": "ChatGPT"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Claude",
+                    "target": "Claude"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "DeepSeek",
+                    "target": "DeepSeek"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Perplexity",
+                    "target": "Perplexity"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Gemini",
+                    "target": "Gemini"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Grok",
+                    "target": "Grok"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Copilot",
+                    "target": "Copilot"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Manus AI",
+                    "target": "Manus AI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Kimi",
+                    "target": "Kimi"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Ollama",
+                    "target": "Ollama"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Bug report",
+                    "target": "Bug 报告"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Feature request",
+                    "target": "功能请求"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Summarize",
+                    "target": "总结"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Fix grammar",
+                    "target": "修正语法"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Expand idea",
+                    "target": "扩展想法"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "My AI tool",
+                    "target": "我的 AI 工具"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "New template",
+                    "target": "新建模板"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open",
+                    "target": "打开"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open split panel",
+                    "target": "打开分屏面板"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Send selected text to AI",
+                    "target": "将选中文本发送给 AI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle sidebar",
+                    "target": "切换侧边栏"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Cycle to next AI service",
+                    "target": "切换到下一个 AI 服务"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Add active note to context",
+                    "target": "将当前笔记添加到上下文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Clear all context",
+                    "target": "清除所有上下文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Save AI response",
+                    "target": "保存 AI 回复"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Send selection with template",
+                    "target": "使用模板发送选中内容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Send feedback",
+                    "target": "发送反馈"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Feedback opens in your browser on the OmniChat feedback page.",
+                    "target": "反馈将通过浏览器在 OmniChat 反馈页面打开。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Cancel",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Open feedback form",
+                    "target": "打开反馈表单"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Request a feature",
+                    "target": "请求新功能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Feature requests open in your browser on the OmniChat feature request page.",
+                    "target": "功能请求将通过浏览器在 OmniChat 功能请求页面打开。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Open request form",
+                    "target": "打开请求表单"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "What's new in ${this.version}",
+                    "target": "${this.version} 的更新内容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Updated from ${this.previousVersion}. Here's the changelog:",
+                    "target": "已从 ${this.previousVersion} 更新。以下是更新日志："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "View full release on GitHub →",
+                    "target": "在 GitHub 上查看完整发布 →"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Close",
+                    "target": "关闭"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "GitHub issues",
+                    "target": "GitHub Issues"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Give feedback",
+                    "target": "提供反馈"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Leaving OmniChat?",
+                    "target": "要离开 OmniChat 吗？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Share your feedback",
+                    "target": "分享您的反馈"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Welcome to OmniChat",
+                    "target": "欢迎使用 OmniChat"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Your favorite AI chats — ChatGPT, Claude, Gemini, and more — live in one Obsidian sidebar. Stay in your notes; bring AI to you.",
+                    "target": "把您喜爱的 AI 聊天——ChatGPT、Claude、Gemini 等——集中到一个 Obsidian 侧边栏中。留在笔记里，让 AI 来到您身边。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Maybe later",
+                    "target": "稍后再说"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "See what's inside",
+                    "target": "看看里面有什么"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "What you can do",
+                    "target": "您可以做什么"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "A quick tour of the essentials — you can explore the rest anytime from the ribbon or settings.",
+                    "target": "快速了解核心功能——您可以随时从功能区或设置中探索其余内容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Tip: ",
+                    "target": "提示："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Open OmniChat from the ribbon (messages icon) or Settings → Community plugins → OmniChat.",
+                    "target": "从功能区（消息图标）或设置 → 第三方插件 → OmniChat 打开 OmniChat。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Back",
+                    "target": "返回"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Open OmniChat",
+                    "target": "打开 OmniChat"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Open a GitHub issue",
+                    "target": "在 GitHub 上创建 Issue"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Choose a type — opens in your browser.",
+                    "target": "选择类型 — 将在浏览器中打开。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Please summarize the following note concisely:\n\n",
+                    "target": "请简明扼要地总结以下笔记："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Please fix the grammar and spelling in the following text:\n\n",
+                    "target": "请修正以下文本中的语法和拼写错误："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Please expand on the following idea with more depth and detail:\n\n",
+                    "target": "请更深入、更详细地展开以下想法："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Support the project",
+                    "target": "支持该项目"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "GitHub Sponsors",
+                    "target": "GitHub Sponsors"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Save AI response",
+                    "target": "保存 AI 回复"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Where would you like to save this?",
+                    "target": "您想保存到哪里？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "New note",
+                    "target": "新建笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Append to existing note",
+                    "target": "追加到现有笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Insert at cursor",
+                    "target": "在光标处插入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Sign in",
+                    "target": "登录"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Sign in with your account. This window will automatically close and refresh your chat once complete.",
+                    "target": "使用您的账户登录。完成后，此窗口将自动关闭并刷新您的聊天。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "I'm signed in (done)",
+                    "target": "我已登录（完成）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Ollama Local",
+                    "target": "Ollama 本地"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "No models found",
+                    "target": "未找到模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Welcome to local AI",
+                    "target": "欢迎使用本地 AI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Fully private, running right on your machine.",
+                    "target": "完全私密，直接在您的机器上运行。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Powered by Ollama API at ",
+                    "target": "由 Ollama API 提供支持，位于 "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Ollama not running?",
+                    "target": "Ollama 未运行？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "[generation stopped]",
+                    "target": "[生成已停止]"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Error connecting to Ollama: ${c}",
+                    "target": "连接 Ollama 时出错：${c}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Clear all",
+                    "target": "全部清除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Could not load the AI service.",
+                    "target": "无法加载 AI 服务。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Check your connection and ensure Obsidian's web viewer is enabled.",
+                    "target": "请检查您的连接，并确保已启用 Obsidian 的网页查看器。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Templates…",
+                    "target": "模板…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Add context",
+                    "target": "添加上下文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Add",
+                    "target": "添加"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Copy",
+                    "target": "复制"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Save",
+                    "target": "保存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Switch AI services",
+                    "target": "切换 AI 服务"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Send selection",
+                    "target": "发送所选内容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Build context",
+                    "target": "构建上下文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Save responses",
+                    "target": "保存回复"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Split view",
+                    "target": "分屏视图"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Custom tools",
+                    "target": "自定义工具"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "Notice(\"Select some text first.\")",
+                    "target": "Notice(\"Select some text first.\")"
+                },
+                {
+                    "source": "appendText(\"Sorry to see you go. If you have a moment, please \")",
+                    "target": "appendText(\"Sorry to see you go. If you have a moment, please \")"
+                },
+                {
+                    "source": "setName(\"AI services\")",
+                    "target": "setName(\"AI services\")"
+                },
+                {
+                    "source": "setDesc(\"Show in the service selector.\")",
+                    "target": "setDesc(\"Show in the service selector.\")"
+                },
+                {
+                    "source": "setName(\"Ollama API URL\")",
+                    "target": "setName(\"Ollama API URL\")"
+                },
+                {
+                    "source": "setName(\"Appearance & behaviour\")",
+                    "target": "setName(\"Appearance & behaviour\")"
+                },
+                {
+                    "source": "setName(\"Default service\")",
+                    "target": "setName(\"Default service\")"
+                },
+                {
+                    "source": "setDesc(\"Which AI opens when the portal first loads.\")",
+                    "target": "setDesc(\"Which AI opens when the portal first loads.\")"
+                },
+                {
+                    "source": "setName(\"Default split panel service\")",
+                    "target": "setName(\"Default split panel service\")"
+                },
+                {
+                    "source": "setDesc(\"Which AI opens in the split panel by default.\")",
+                    "target": "setDesc(\"Which AI opens in the split panel by default.\")"
+                },
+                {
+                    "source": "setName(\"Open on startup\")",
+                    "target": "setName(\"Open on startup\")"
+                },
+                {
+                    "source": "setDesc(\"Restore the portal when Obsidian loads.\")",
+                    "target": "setDesc(\"Restore the portal when Obsidian loads.\")"
+                },
+                {
+                    "source": "setName(\"Auto-refresh (minutes)\")",
+                    "target": "setName(\"Auto-refresh (minutes)\")"
+                },
+                {
+                    "source": "setDesc(\"Silently reload after this many idle minutes. 0 = off.\")",
+                    "target": "setDesc(\"Silently reload after this many idle minutes. 0 = off.\")"
+                },
+                {
+                    "source": "setName(\"Open split panel\")",
+                    "target": "setName(\"Open split panel\")"
+                },
+                {
+                    "source": "setName(\"Context & notes\")",
+                    "target": "setName(\"Context & notes\")"
+                },
+                {
+                    "source": "setName(\"Send selected text to AI\")",
+                    "target": "setName(\"Send selected text to AI\")"
+                },
+                {
+                    "source": "setDesc(\"Enable injecting editor selections into the active AI service.\")",
+                    "target": "setDesc(\"Enable injecting editor selections into the active AI service.\")"
+                },
+                {
+                    "source": "setName(\"Auto-add active note on open\")",
+                    "target": "setName(\"Auto-add active note on open\")"
+                },
+                {
+                    "source": "setDesc(\"Add the current note to context when the portal opens.\")",
+                    "target": "setDesc(\"Add the current note to context when the portal opens.\")"
+                },
+                {
+                    "source": "setName(\"Strip frontmatter\")",
+                    "target": "setName(\"Strip frontmatter\")"
+                },
+                {
+                    "source": "setDesc(\"Remove the YAML --- block from notes before sending as context.\")",
+                    "target": "setDesc(\"Remove the YAML --- block from notes before sending as context.\")"
+                },
+                {
+                    "source": "setName(\"Auto-clear context after send\")",
+                    "target": "setName(\"Auto-clear context after send\")"
+                },
+                {
+                    "source": "setDesc(\"Clear all context items after clicking add.\")",
+                    "target": "setDesc(\"Clear all context items after clicking add.\")"
+                },
+                {
+                    "source": "setName(\"Context prefix\")",
+                    "target": "setName(\"Context prefix\")"
+                },
+                {
+                    "source": "setDesc(\"Text prepended to every context send. Leave blank to send notes as-is.\")",
+                    "target": "setDesc(\"Text prepended to every context send. Leave blank to send notes as-is.\")"
+                },
+                {
+                    "source": "setPlaceholder(\"E.g. Here are my notes, please help me:\")",
+                    "target": "setPlaceholder(\"E.g. Here are my notes, please help me:\")"
+                },
+                {
+                    "source": "setName(\"Max context length\")",
+                    "target": "setName(\"Max context length\")"
+                },
+                {
+                    "source": "setDesc(\"Character limit for context sent to AI.\")",
+                    "target": "setDesc(\"Character limit for context sent to AI.\")"
+                },
+                {
+                    "source": "setName(\"Save folder\")",
+                    "target": "setName(\"Save folder\")"
+                },
+                {
+                    "source": "setDesc(\"Vault folder for notes created via the save buttons.\")",
+                    "target": "setDesc(\"Vault folder for notes created via the save buttons.\")"
+                },
+                {
+                    "source": "setPlaceholder(\"AI notes\")",
+                    "target": "setPlaceholder(\"AI notes\")"
+                },
+                {
+                    "source": "setButtonText(\"Open folder\")",
+                    "target": "setButtonText(\"Open folder\")"
+                },
+                {
+                    "source": "setTooltip(\"Reveal in file explorer\")",
+                    "target": "setTooltip(\"Reveal in file explorer\")"
+                },
+                {
+                    "source": "setName(\"Organise saves by date\")",
+                    "target": "setName(\"Organise saves by date\")"
+                },
+                {
+                    "source": "setName(\"Auto-format AI response\")",
+                    "target": "setName(\"Auto-format AI response\")"
+                },
+                {
+                    "source": "setDesc(\"Reconstruct tables and code blocks when saving AI responses to your vault.\")",
+                    "target": "setDesc(\"Reconstruct tables and code blocks when saving AI responses to your vault.\")"
+                },
+                {
+                    "source": "setName(\"Custom services\")",
+                    "target": "setName(\"Custom services\")"
+                },
+                {
+                    "source": "setName(\"Add custom service\")",
+                    "target": "setName(\"Add custom service\")"
+                },
+                {
+                    "source": "setButtonText(\"+ add\")",
+                    "target": "setButtonText(\"+ add\")"
+                },
+                {
+                    "source": "Notice(\"A custom service with this URL already exists.\")",
+                    "target": "Notice(\"A custom service with this URL already exists.\")"
+                },
+                {
+                    "source": "setName(\"Prompt templates\")",
+                    "target": "setName(\"Prompt templates\")"
+                },
+                {
+                    "source": "setName(\"Add template\")",
+                    "target": "setName(\"Add template\")"
+                },
+                {
+                    "source": "setDesc(\"One-click prompts that inject text into the active AI service. Variables: {{selection}}, {{title}}, {{path}}, {{tags}}, {{date}}.\")",
+                    "target": "setDesc(\"One-click prompts that inject text into the active AI service. Variables: {{selection}}, {{title}}, {{path}}, {{tags}}, {{date}}.\")"
+                },
+                {
+                    "source": "setName(`Template ${l+1}`)",
+                    "target": "setName(`Template ${l+1}`)"
+                },
+                {
+                    "source": "setPlaceholder(\"Title (e.g. Summarise)\")",
+                    "target": "setPlaceholder(\"Title (e.g. Summarise)\")"
+                },
+                {
+                    "source": "setTooltip(\"Delete template\")",
+                    "target": "setTooltip(\"Delete template\")"
+                },
+                {
+                    "source": "setDesc(\"Text inserted into the AI input.\")",
+                    "target": "setDesc(\"Text inserted into the AI input.\")"
+                },
+                {
+                    "source": "setName(\"Browser & authentication\")",
+                    "target": "setName(\"Browser & authentication\")"
+                },
+                {
+                    "source": "setName(\"Custom user-agent\")",
+                    "target": "setName(\"Custom user-agent\")"
+                },
+                {
+                    "source": "setDesc(\"Overrides the browser user-agent string. Leave blank to use authentic Chrome desktop browser emulation.\")",
+                    "target": "setDesc(\"Overrides the browser user-agent string. Leave blank to use authentic Chrome desktop browser emulation.\")"
+                },
+                {
+                    "source": "setButtonText(\"Reset to Chrome\")",
+                    "target": "setButtonText(\"Reset to Chrome\")"
+                },
+                {
+                    "source": "Notice(\"User-agent reset to default Chrome.\")",
+                    "target": "Notice(\"User-agent reset to default Chrome.\")"
+                },
+                {
+                    "source": "setName(\"Clear AI browser data\")",
+                    "target": "setName(\"Clear AI browser data\")"
+                },
+                {
+                    "source": "setDesc(\"Clears cookies, cache, and storage for embedded AI web sessions. Useful if a login or session becomes corrupted.\")",
+                    "target": "setDesc(\"Clears cookies, cache, and storage for embedded AI web sessions. Useful if a login or session becomes corrupted.\")"
+                },
+                {
+                    "source": "setButtonText(\"Clear cache & cookies\")",
+                    "target": "setButtonText(\"Clear cache & cookies\")"
+                },
+                {
+                    "source": "Notice(\"AI browser cache & cookies cleared.\")",
+                    "target": "Notice(\"AI browser cache & cookies cleared.\")"
+                },
+                {
+                    "source": "Notice(\"Could not clear browser session in this environment.\")",
+                    "target": "Notice(\"Could not clear browser session in this environment.\")"
+                },
+                {
+                    "source": "Notice(\"Inserted at cursor.\")",
+                    "target": "Notice(\"Inserted at cursor.\")"
+                },
+                {
+                    "source": "Notice(`Saved to ${l.path}`)",
+                    "target": "Notice(`Saved to ${l.path}`)"
+                },
+                {
+                    "source": "Notice(`Appended to ${s.path}`)",
+                    "target": "Notice(`Appended to ${s.path}`)"
+                },
+                {
+                    "source": "Notice(\"Signed in successfully.\")",
+                    "target": "Notice(\"Signed in successfully.\")"
+                },
+                {
+                    "source": "Notice(\"No model selected or ollama is not running.\")",
+                    "target": "Notice(\"No model selected or ollama is not running.\")"
+                },
+                {
+                    "source": "setTitle(\"Active note\")",
+                    "target": "setTitle(\"Active note\")"
+                },
+                {
+                    "source": "setTitle(\"Open tabs\")",
+                    "target": "setTitle(\"Open tabs\")"
+                },
+                {
+                    "source": "Notice(\"No active file.\")",
+                    "target": "Notice(\"No active file.\")"
+                },
+                {
+                    "source": "Notice(\"Already in context.\")",
+                    "target": "Notice(\"Already in context.\")"
+                },
+                {
+                    "source": "Notice(`\"${e.basename}\" is already in context.`)",
+                    "target": "Notice(`\"${e.basename}\" is already in context.`)"
+                },
+                {
+                    "source": "Notice(`Added \"${e.basename}\" to OmniChat context.`)",
+                    "target": "Notice(`Added \"${e.basename}\" to OmniChat context.`)"
+                },
+                {
+                    "source": "Notice(\"No open Markdown files.\")",
+                    "target": "Notice(\"No open Markdown files.\")"
+                },
+                {
+                    "source": "Notice(`Added ${t} file${t!==1?\"s\":\"\"} to context.`)",
+                    "target": "Notice(`Added ${t} file${t!==1?\"s\":\"\"} to context.`)"
+                },
+                {
+                    "source": "Notice(\"All open files already in context.\")",
+                    "target": "Notice(\"All open files already in context.\")"
+                },
+                {
+                    "source": "Notice(\"Couldn't insert or copy the template.\")",
+                    "target": "Notice(\"Couldn't insert or copy the template.\")"
+                },
+                {
+                    "source": "Notice(\"Add some notes to context first.\")",
+                    "target": "Notice(\"Add some notes to context first.\")"
+                },
+                {
+                    "source": "Notice(\"No readable notes found.\")",
+                    "target": "Notice(\"No readable notes found.\")"
+                },
+                {
+                    "source": "Notice(\"Context pasted in chat.\")",
+                    "target": "Notice(\"Context pasted in chat.\")"
+                },
+                {
+                    "source": "Notice(\"Context copied to clipboard.\")",
+                    "target": "Notice(\"Context copied to clipboard.\")"
+                },
+                {
+                    "source": "Notice(\"Select the text you want to save in the chat first.\")",
+                    "target": "Notice(\"Select the text you want to save in the chat first.\")"
+                },
+                {
+                    "source": "Notice(\"Selection sent to AI.\")",
+                    "target": "Notice(\"Selection sent to AI.\")"
+                },
+                {
+                    "source": "Notice(\"Couldn't send or copy the selection.\")",
+                    "target": "Notice(\"Couldn't send or copy the selection.\")"
+                },
+                {
+                    "source": "setTitle(\"Add to OmniChat context\")",
+                    "target": "setTitle(\"Add to OmniChat context\")"
+                },
+                {
+                    "source": "setTitle(\"Send selected text to AI\")",
+                    "target": "setTitle(\"Send selected text to AI\")"
+                },
+                {
+                    "source": "Notice(`Switched to ${n.label}`)",
+                    "target": "Notice(`Switched to ${n.label}`)"
+                },
+                {
+                    "source": "name:`Open ${s.label}`",
+                    "target": "name:`Open ${s.label}`"
+                },
+                {
+                    "source": "name:\"Open split panel\"",
+                    "target": "name:\"Open split panel\""
+                },
+                {
+                    "source": "name:\"Send selected text to AI\"",
+                    "target": "name:\"Send selected text to AI\""
+                },
+                {
+                    "source": "name:\"Toggle sidebar\"",
+                    "target": "name:\"Toggle sidebar\""
+                },
+                {
+                    "source": "name:\"Cycle to next AI service\"",
+                    "target": "name:\"Cycle to next AI service\""
+                },
+                {
+                    "source": "name:\"Add active note to context\"",
+                    "target": "name:\"Add active note to context\""
+                },
+                {
+                    "source": "name:\"Clear all context\"",
+                    "target": "name:\"Clear all context\""
+                },
+                {
+                    "source": "name:\"Save AI response\"",
+                    "target": "name:\"Save AI response\""
+                },
+                {
+                    "source": "name:\"Send selection with template\"",
+                    "target": "name:\"Send selection with template\""
+                },
+                {
+                    "source": "text:\"Send feedback\"",
+                    "target": "text:\"Send feedback\""
+                },
+                {
+                    "source": "text:\"Feedback opens in your browser on the OmniChat feedback page.\"",
+                    "target": "text:\"Feedback opens in your browser on the OmniChat feedback page.\""
+                },
+                {
+                    "source": "text:\"Open feedback form\"",
+                    "target": "text:\"Open feedback form\""
+                },
+                {
+                    "source": "text:\"Request a feature\"",
+                    "target": "text:\"Request a feature\""
+                },
+                {
+                    "source": "text:\"Feature requests open in your browser on the OmniChat feature request page.\"",
+                    "target": "text:\"Feature requests open in your browser on the OmniChat feature request page.\""
+                },
+                {
+                    "source": "text:\"Open request form\"",
+                    "target": "text:\"Open request form\""
+                },
+                {
+                    "source": "text:`What's new in ${this.version}`",
+                    "target": "text:`What's new in ${this.version}`"
+                },
+                {
+                    "source": "text:`Updated from ${this.previousVersion}. Here's the changelog:`",
+                    "target": "text:`Updated from ${this.previousVersion}. Here's the changelog:`"
+                },
+                {
+                    "source": "text:\"GitHub issues\"",
+                    "target": "text:\"GitHub issues\""
+                },
+                {
+                    "source": "text:\"Give feedback\"",
+                    "target": "text:\"Give feedback\""
+                },
+                {
+                    "source": "text:\"Leaving OmniChat?\"",
+                    "target": "text:\"Leaving OmniChat?\""
+                },
+                {
+                    "source": "text:\"Share your feedback\"",
+                    "target": "text:\"Share your feedback\""
+                },
+                {
+                    "source": "description:\"Jump between ChatGPT, Claude, Gemini, and more from one sidebar.\"",
+                    "target": "description:\"Jump between ChatGPT, Claude, Gemini, and more from one sidebar.\""
+                },
+                {
+                    "source": "description:\"Highlight text in a note and send it straight into the active chat.\"",
+                    "target": "description:\"Highlight text in a note and send it straight into the active chat.\""
+                },
+                {
+                    "source": "description:\"Add notes or folders, then inject them into the chat when you need them.\"",
+                    "target": "description:\"Add notes or folders, then inject them into the chat when you need them.\""
+                },
+                {
+                    "source": "description:\"Copy an AI reply and save it as a new note or append to an existing one.\"",
+                    "target": "description:\"Copy an AI reply and save it as a new note or append to an existing one.\""
+                },
+                {
+                    "source": "description:\"Open a second panel to keep two AI tools side by side.\"",
+                    "target": "description:\"Open a second panel to keep two AI tools side by side.\""
+                },
+                {
+                    "source": "description:\"Add any AI site by URL so it appears in the same selector.\"",
+                    "target": "description:\"Add any AI site by URL so it appears in the same selector.\""
+                },
+                {
+                    "source": "text:\"Welcome to OmniChat\"",
+                    "target": "text:\"Welcome to OmniChat\""
+                },
+                {
+                    "source": "text:\"Maybe later\"",
+                    "target": "text:\"Maybe later\""
+                },
+                {
+                    "source": "text:\"See what's inside\"",
+                    "target": "text:\"See what's inside\""
+                },
+                {
+                    "source": "text:\"What you can do\"",
+                    "target": "text:\"What you can do\""
+                },
+                {
+                    "source": "text:\"Tip: \"",
+                    "target": "text:\"Tip: \""
+                },
+                {
+                    "source": "text:\"Open OmniChat\"",
+                    "target": "text:\"Open OmniChat\""
+                },
+                {
+                    "source": "text:\"Open a GitHub issue\"",
+                    "target": "text:\"Open a GitHub issue\""
+                },
+                {
+                    "source": "text:`Please summarize the following note concisely:\n\n`",
+                    "target": "text:`Please summarize the following note concisely:\n\n`"
+                },
+                {
+                    "source": "text:`Please fix the grammar and spelling in the following text:\n\n`",
+                    "target": "text:`Please fix the grammar and spelling in the following text:\n\n`"
+                },
+                {
+                    "source": "text:`Please expand on the following idea with more depth and detail:\n\n`",
+                    "target": "text:`Please expand on the following idea with more depth and detail:\n\n`"
+                },
+                {
+                    "source": "text:\"Support the project\"",
+                    "target": "text:\"Support the project\""
+                },
+                {
+                    "source": "text:\"GitHub Sponsors\"",
+                    "target": "text:\"GitHub Sponsors\""
+                },
+                {
+                    "source": "text:\"Save AI response\"",
+                    "target": "text:\"Save AI response\""
+                },
+                {
+                    "source": "text:\"Where would you like to save this?\"",
+                    "target": "text:\"Where would you like to save this?\""
+                },
+                {
+                    "source": "text:\"New note\"",
+                    "target": "text:\"New note\""
+                },
+                {
+                    "source": "text:\"Append to existing note\"",
+                    "target": "text:\"Append to existing note\""
+                },
+                {
+                    "source": "text:\"Insert at cursor\"",
+                    "target": "text:\"Insert at cursor\""
+                },
+                {
+                    "source": "text:\"Sign in\"",
+                    "target": "text:\"Sign in\""
+                },
+                {
+                    "source": "text:\"Sign in with your account. This window will automatically close and refresh your chat once complete.\"",
+                    "target": "text:\"Sign in with your account. This window will automatically close and refresh your chat once complete.\""
+                },
+                {
+                    "source": "text:\"I'm signed in (done)\"",
+                    "target": "text:\"I'm signed in (done)\""
+                },
+                {
+                    "source": "text:\"Ollama Local\"",
+                    "target": "text:\"Ollama Local\""
+                },
+                {
+                    "source": "text:\"No models found\"",
+                    "target": "text:\"No models found\""
+                },
+                {
+                    "source": "text:\"Welcome to local AI\"",
+                    "target": "text:\"Welcome to local AI\""
+                },
+                {
+                    "source": "text:\"Fully private, running right on your machine.\"",
+                    "target": "text:\"Fully private, running right on your machine.\""
+                },
+                {
+                    "source": "text:\"Powered by Ollama API at \"",
+                    "target": "text:\"Powered by Ollama API at \""
+                },
+                {
+                    "source": "text:\"Ollama not running?\"",
+                    "target": "text:\"Ollama not running?\""
+                },
+                {
+                    "source": "text:\"[generation stopped]\"",
+                    "target": "text:\"[generation stopped]\""
+                },
+                {
+                    "source": "text:`Error connecting to Ollama: ${c}`",
+                    "target": "text:`Error connecting to Ollama: ${c}`"
+                },
+                {
+                    "source": "text:\"Clear all\"",
+                    "target": "text:\"Clear all\""
+                },
+                {
+                    "source": "text:\"Could not load the AI service.\"",
+                    "target": "text:\"Could not load the AI service.\""
+                },
+                {
+                    "source": "text:\"Check your connection and ensure Obsidian's web viewer is enabled.\"",
+                    "target": "text:\"Check your connection and ensure Obsidian's web viewer is enabled.\""
+                },
+                {
+                    "source": "text:\"Add context\"",
+                    "target": "text:\"Add context\""
+                },
+                {
+                    "source": "textContent = ''",
+                    "target": "textContent = ''"
+                }
+            ]
+        }
+    }
+}
