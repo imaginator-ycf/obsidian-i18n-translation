@@ -1,0 +1,2166 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "aibrowser-chat",
+        "version": "1.0.0",
+        "title": "OmniChat",
+        "description": "OmniChat Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "1.7.5",
+        "author": ""
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "placeholder",
+                    "source": "向 Ollama 提问任何问题…",
+                    "target": "向 Ollama 提问任何问题…"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "重新加载 AI 页面",
+                    "target": "重新加载 AI 页面"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "将笔记或文件夹添加到上下文",
+                    "target": "将笔记或文件夹添加到上下文"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "将提示词模板插入聊天",
+                    "target": "将提示词模板插入聊天"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "将上下文发送到当前 AI 聊天（必要时回退到剪贴板）",
+                    "target": "将上下文发送到当前 AI 聊天（必要时回退到剪贴板）"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "将上下文复制到剪贴板",
+                    "target": "将上下文复制到剪贴板"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "先复制 AI 文本，再将其保存到您的仓库",
+                    "target": "先复制 AI 文本，再将其保存到您的仓库"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "自动",
+                    "target": "自动"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "浅色",
+                    "target": "浅色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "深色",
+                    "target": "深色"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "舍不得您走。如果您有空，请",
+                    "target": "舍不得您走。如果您有空，请"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "——这有助于我们改进。您可以跳过。",
+                    "target": "——这有助于我们改进。您可以跳过。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat：保存笔记失败",
+                    "target": "OmniChat：保存笔记失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat：追加到笔记失败",
+                    "target": "OmniChat：追加到笔记失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat：添加上下文失败",
+                    "target": "OmniChat：添加上下文失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat：复制上下文失败",
+                    "target": "OmniChat：复制上下文失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat：清除浏览器会话失败",
+                    "target": "OmniChat：清除浏览器会话失败"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "打开",
+                    "target": "打开"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "打开文件夹",
+                    "target": "打开文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "+ 添加",
+                    "target": "+ 添加"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "重置为 Chrome",
+                    "target": "重置为 Chrome"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "清除缓存和 Cookie",
+                    "target": "清除缓存和 Cookie"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "在服务选择器中显示。",
+                    "target": "在服务选择器中显示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "本地或远程 Ollama 实例的基础 URL（默认：http://127.0.0.1:11434）。",
+                    "target": "本地或远程 Ollama 实例的基础 URL（默认：http://127.0.0.1:11434）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "标题栏配色方案 — 自动跟随 Obsidian。",
+                    "target": "标题栏配色方案 — 自动跟随 Obsidian。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "聊天面板首次打开时加载哪个 AI。",
+                    "target": "聊天面板首次打开时加载哪个 AI。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "默认在分屏面板中打开哪个 AI。",
+                    "target": "默认在分屏面板中打开哪个 AI。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Obsidian 启动时恢复聊天面板。",
+                    "target": "Obsidian 启动时恢复聊天面板。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "空闲达到指定分钟数后自动静默刷新。0 表示关闭。",
+                    "target": "空闲达到指定分钟数后自动静默刷新。0 表示关闭。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "打开另一个聊天面板——每个面板都会记住自己的服务。",
+                    "target": "打开另一个聊天面板——每个面板都会记住自己的服务。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "允许将编辑器中选中的文本注入当前 AI 服务。",
+                    "target": "允许将编辑器中选中的文本注入当前 AI 服务。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "打开聊天面板时自动将当前笔记添加到上下文。",
+                    "target": "打开聊天面板时自动将当前笔记添加到上下文。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "将笔记作为上下文发送前，先移除其中的 YAML — 块。",
+                    "target": "将笔记作为上下文发送前，先移除其中的 YAML — 块。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "点击添加后清除所有上下文项。",
+                    "target": "点击添加后清除所有上下文项。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "每次发送上下文时附加在开头的文本。留空则按原样发送笔记。",
+                    "target": "每次发送上下文时附加在开头的文本。留空则按原样发送笔记。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "发送给 AI 的上下文字符数限制。",
+                    "target": "发送给 AI 的上下文字符数限制。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "保存按钮所创建笔记的存放文件夹。",
+                    "target": "保存按钮所创建笔记的存放文件夹。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "保存到每日子文件夹——例如 AI notes/2026-06-01/response.md。",
+                    "target": "保存到每日子文件夹——例如 AI notes/2026-06-01/response.md。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "将 AI 回复保存到您的仓库时，重建其中的表格和代码块。",
+                    "target": "将 AI 回复保存到您的仓库时，重建其中的表格和代码块。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "通过 URL 添加任何 AI 工具——它会出现在服务选择器中。",
+                    "target": "通过 URL 添加任何 AI 工具——它会出现在服务选择器中。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "一键提示词，将文本注入当前活动的 AI 服务。变量：{{selection}}、{{title}}、{{path}}、{{tags}}、{{date}}。",
+                    "target": "一键提示词，将文本注入当前活动的 AI 服务。变量：{{selection}}、{{title}}、{{path}}、{{tags}}、{{date}}。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "暂无模板——添加一个以开始使用。",
+                    "target": "暂无模板——添加一个以开始使用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "插入到 AI 输入框中的文本。",
+                    "target": "插入到 AI 输入框中的文本。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "覆写浏览器 user-agent 字符串。留空以使用真实的 Chrome 桌面浏览器模拟。",
+                    "target": "覆写浏览器 user-agent 字符串。留空以使用真实的 Chrome 桌面浏览器模拟。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "清除嵌入式 AI 网页会话的 cookie、缓存和存储。当登录或会话损坏时很有用。",
+                    "target": "清除嵌入式 AI 网页会话的 cookie、缓存和存储。当登录或会话损坏时很有用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "AI 服务",
+                    "target": "AI 服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Ollama API URL",
+                    "target": "Ollama API URL"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "外观与行为",
+                    "target": "外观与行为"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "主题",
+                    "target": "主题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "默认服务",
+                    "target": "默认服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "默认分屏面板服务",
+                    "target": "默认分屏面板服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "启动时打开",
+                    "target": "启动时打开"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "自动刷新（分钟）",
+                    "target": "自动刷新（分钟）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "打开分屏面板",
+                    "target": "打开分屏面板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "上下文与笔记",
+                    "target": "上下文与笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "将选中文本发送给 AI",
+                    "target": "将选中文本发送给 AI"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "打开面板时自动添加当前笔记",
+                    "target": "打开面板时自动添加当前笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "去除前置元数据",
+                    "target": "去除前置元数据"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "发送后自动清除上下文",
+                    "target": "发送后自动清除上下文"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "上下文前缀",
+                    "target": "上下文前缀"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "最大上下文长度",
+                    "target": "最大上下文长度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "保存文件夹",
+                    "target": "保存文件夹"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "按日期分文件夹保存",
+                    "target": "按日期分文件夹保存"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "自动格式化 AI 回复",
+                    "target": "自动格式化 AI 回复"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "自定义服务",
+                    "target": "自定义服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "添加自定义服务",
+                    "target": "添加自定义服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "提示词模板",
+                    "target": "提示词模板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "添加模板",
+                    "target": "添加模板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "提示词",
+                    "target": "提示词"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "浏览器与身份验证",
+                    "target": "浏览器与身份验证"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "自定义 User-Agent",
+                    "target": "自定义 User-Agent"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "清除 AI 浏览器数据",
+                    "target": "清除 AI 浏览器数据"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "选择模板…",
+                    "target": "选择模板…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "例如：以下是我的笔记，请帮我：",
+                    "target": "例如：以下是我的笔记，请帮我："
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "AI 笔记",
+                    "target": "AI 笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "标签",
+                    "target": "标签"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "输入 URL…",
+                    "target": "输入 URL…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "标题（例如：总结）",
+                    "target": "标题（例如：总结）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "提示文本…",
+                    "target": "提示文本…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "按名称或内容搜索笔记…",
+                    "target": "按名称或内容搜索笔记…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "输入以搜索文件夹…",
+                    "target": "输入以搜索文件夹…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "输入以搜索笔记…",
+                    "target": "输入以搜索笔记…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "当前笔记",
+                    "target": "当前笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "打开的标签页",
+                    "target": "打开的标签页"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "选择笔记…",
+                    "target": "选择笔记…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "选择文件夹…",
+                    "target": "选择文件夹…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "添加到 OmniChat 上下文",
+                    "target": "添加到 OmniChat 上下文"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "将选中文本发送给 AI",
+                    "target": "将选中文本发送给 AI"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "在文件资源管理器中显示",
+                    "target": "在文件资源管理器中显示"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "移除",
+                    "target": "移除"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTooltip",
+                    "source": "删除模板",
+                    "target": "删除模板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "尝试了无效的 URL：",
+                    "target": "尝试了无效的 URL："
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "请先选择一些文本。",
+                    "target": "请先选择一些文本。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "未配置提示词模板 — 请在设置中添加一个。",
+                    "target": "未配置提示词模板 — 请在设置中添加一个。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "已存在使用此 URL 的自定义服务。",
+                    "target": "已存在使用此 URL 的自定义服务。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "User-Agent 已重置为默认 Chrome。",
+                    "target": "User-Agent 已重置为默认 Chrome。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "AI 浏览器缓存和 Cookie 已清除。",
+                    "target": "AI 浏览器缓存和 Cookie 已清除。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "无法在此环境中清除浏览器会话。",
+                    "target": "无法在此环境中清除浏览器会话。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "编辑器中没有打开任何笔记——请先打开笔记并光标定位，然后重试。",
+                    "target": "编辑器中没有打开任何笔记——请先打开笔记并光标定位，然后重试。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "已插入到光标处。",
+                    "target": "已插入到光标处。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "无法保存笔记 — 请查看控制台了解详情。",
+                    "target": "无法保存笔记 — 请查看控制台了解详情。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "无法追加到笔记 — 请查看控制台了解详情。",
+                    "target": "无法追加到笔记 — 请查看控制台了解详情。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "登录成功。",
+                    "target": "登录成功。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "正在使用已登录会话重新加载聊天…",
+                    "target": "正在使用已登录会话重新加载聊天…"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "未选择模型或 Ollama 未运行。",
+                    "target": "未选择模型或 Ollama 未运行。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "没有活动文件。",
+                    "target": "没有活动文件。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "已在上下文中。",
+                    "target": "已在上下文中。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "没有打开的 Markdown 文件。",
+                    "target": "没有打开的 Markdown 文件。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Added ${t} file${t!==1?\"s\":\"\"} to context.",
+                    "target": "Added ${t} file${t!==1?\"s\":\"\"} to context."
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "所有打开的文件均已在上下文中。",
+                    "target": "所有打开的文件均已在上下文中。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "此模板为空 — 请在设置中编辑。",
+                    "target": "此模板为空 — 请在设置中编辑。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "模板已复制 — 使用 Cmd+V / Ctrl+V 粘贴。",
+                    "target": "模板已复制 — 使用 Cmd+V / Ctrl+V 粘贴。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "无法插入或复制模板。",
+                    "target": "无法插入或复制模板。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "请先向上下文添加一些笔记。",
+                    "target": "请先向上下文添加一些笔记。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "未找到可读的笔记。",
+                    "target": "未找到可读的笔记。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "上下文已截断 — 已达上限。",
+                    "target": "上下文已截断 — 已达上限。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "上下文已粘贴到聊天中。",
+                    "target": "上下文已粘贴到聊天中。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "上下文已复制 — 使用 Cmd+V / Ctrl+V 粘贴。",
+                    "target": "上下文已复制 — 使用 Cmd+V / Ctrl+V 粘贴。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "无法读取一个或多个笔记 — 请查看控制台了解详情。",
+                    "target": "无法读取一个或多个笔记 — 请查看控制台了解详情。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "上下文已复制到剪贴板。",
+                    "target": "上下文已复制到剪贴板。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "无法复制上下文 — 请查看控制台了解详情。",
+                    "target": "无法复制上下文 — 请查看控制台了解详情。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "请先在聊天中选择要保存的文本。",
+                    "target": "请先在聊天中选择要保存的文本。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "所选内容已发送给 AI。",
+                    "target": "所选内容已发送给 AI。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "所选内容已复制 — 使用 Cmd+V / Ctrl+V 粘贴。",
+                    "target": "所选内容已复制 — 使用 Cmd+V / Ctrl+V 粘贴。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "无法发送或复制所选内容。",
+                    "target": "无法发送或复制所选内容。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "\"发送选中文本\"功能已禁用——请在 OmniChat 设置中启用。",
+                    "target": "\"发送选中文本\"功能已禁用——请在 OmniChat 设置中启用。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "未启用任何 AI 服务 — 请在 OmniChat 设置中启用一个。",
+                    "target": "未启用任何 AI 服务 — 请在 OmniChat 设置中启用一个。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "在 Ko-fi 上支持",
+                    "target": "在 Ko-fi 上支持"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "在 GitHub 上赞助",
+                    "target": "在 GitHub 上赞助"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "oc-feedback-actions oc-update-actions",
+                    "target": "oc-feedback-actions oc-update-actions"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "oc-feedback-lead oc-uninstall-lead",
+                    "target": "oc-feedback-lead oc-uninstall-lead"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "oc-support-banner-btn oc-support-kofi-btn",
+                    "target": "oc-support-banner-btn oc-support-kofi-btn"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "oc-support-banner-btn oc-support-github-btn",
+                    "target": "oc-support-banner-btn oc-support-github-btn"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "mod-cta save-dest-btn",
+                    "target": "mod-cta save-dest-btn"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "vc-select-wrap vc-templates-wrap",
+                    "target": "vc-select-wrap vc-templates-wrap"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "vc-item-badge vc-item-badge--${n.type}",
+                    "target": "vc-item-badge vc-item-badge--${n.type}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "有些功能无法正常工作。",
+                    "target": "有些功能无法正常工作。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "建议改进。",
+                    "target": "建议改进。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "在一个侧边栏中即可在 ChatGPT、Claude、Gemini 等之间切换。",
+                    "target": "在一个侧边栏中即可在 ChatGPT、Claude、Gemini 等之间切换。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "在笔记中选中文本，直接发送到当前聊天。",
+                    "target": "在笔记中选中文本，直接发送到当前聊天。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "添加笔记或文件夹，需要时将其注入聊天中。",
+                    "target": "添加笔记或文件夹，需要时将其注入聊天中。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "复制 AI 回复，并将其保存为新笔记或追加到现有笔记中。",
+                    "target": "复制 AI 回复，并将其保存为新笔记或追加到现有笔记中。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "打开第二个面板，让两个 AI 工具并排显示。",
+                    "target": "打开第二个面板，让两个 AI 工具并排显示。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "通过 URL 添加任何 AI 网站，使其显示在同一个选择器中。",
+                    "target": "通过 URL 添加任何 AI 网站，使其显示在同一个选择器中。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "id",
+                    "source": "open",
+                    "target": "open"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "id",
+                    "source": "toggle",
+                    "target": "toggle"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "ChatGPT",
+                    "target": "ChatGPT"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Claude",
+                    "target": "Claude"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "DeepSeek",
+                    "target": "DeepSeek"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Perplexity",
+                    "target": "Perplexity"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Gemini",
+                    "target": "Gemini"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Grok",
+                    "target": "Grok"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Copilot",
+                    "target": "Copilot"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Manus AI",
+                    "target": "Manus AI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Kimi",
+                    "target": "Kimi"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Ollama",
+                    "target": "Ollama"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Bug 报告",
+                    "target": "Bug 报告"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "功能请求",
+                    "target": "功能请求"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "总结",
+                    "target": "总结"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "修正语法",
+                    "target": "修正语法"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "扩展想法",
+                    "target": "扩展想法"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "我的 AI 工具",
+                    "target": "我的 AI 工具"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "新建模板",
+                    "target": "新建模板"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "打开",
+                    "target": "打开"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "打开分屏面板",
+                    "target": "打开分屏面板"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "将选中文本发送给 AI",
+                    "target": "将选中文本发送给 AI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "切换侧边栏",
+                    "target": "切换侧边栏"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "切换到下一个 AI 服务",
+                    "target": "切换到下一个 AI 服务"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "将当前笔记添加到上下文",
+                    "target": "将当前笔记添加到上下文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "清除所有上下文",
+                    "target": "清除所有上下文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "保存 AI 回复",
+                    "target": "保存 AI 回复"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "使用模板发送选中内容",
+                    "target": "使用模板发送选中内容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "发送反馈",
+                    "target": "发送反馈"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "反馈将通过浏览器在 OmniChat 反馈页面打开。",
+                    "target": "反馈将通过浏览器在 OmniChat 反馈页面打开。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "取消",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "打开反馈表单",
+                    "target": "打开反馈表单"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "请求新功能",
+                    "target": "请求新功能"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "功能请求将通过浏览器在 OmniChat 功能请求页面打开。",
+                    "target": "功能请求将通过浏览器在 OmniChat 功能请求页面打开。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "打开请求表单",
+                    "target": "打开请求表单"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "在 GitHub 上查看完整发布 →",
+                    "target": "在 GitHub 上查看完整发布 →"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "关闭",
+                    "target": "关闭"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "GitHub Issues",
+                    "target": "GitHub Issues"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "提供反馈",
+                    "target": "提供反馈"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "要离开 OmniChat 吗？",
+                    "target": "要离开 OmniChat 吗？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "分享您的反馈",
+                    "target": "分享您的反馈"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "欢迎使用 OmniChat",
+                    "target": "欢迎使用 OmniChat"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "把您喜爱的 AI 聊天——ChatGPT、Claude、Gemini 等——集中到一个 Obsidian 侧边栏中。留在笔记里，让 AI 来到您身边。",
+                    "target": "把您喜爱的 AI 聊天——ChatGPT、Claude、Gemini 等——集中到一个 Obsidian 侧边栏中。留在笔记里，让 AI 来到您身边。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "稍后再说",
+                    "target": "稍后再说"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "看看里面有什么",
+                    "target": "看看里面有什么"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "您可以做什么",
+                    "target": "您可以做什么"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "快速了解核心功能——您可以随时从功能区或设置中探索其余内容。",
+                    "target": "快速了解核心功能——您可以随时从功能区或设置中探索其余内容。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "提示：",
+                    "target": "提示："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "从功能区（消息图标）或设置 → 第三方插件 → OmniChat 打开 OmniChat。",
+                    "target": "从功能区（消息图标）或设置 → 第三方插件 → OmniChat 打开 OmniChat。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "返回",
+                    "target": "返回"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "打开 OmniChat",
+                    "target": "打开 OmniChat"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "在 GitHub 上创建 Issue",
+                    "target": "在 GitHub 上创建 Issue"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "选择类型 — 将在浏览器中打开。",
+                    "target": "选择类型 — 将在浏览器中打开。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "请简明扼要地总结以下笔记：",
+                    "target": "请简明扼要地总结以下笔记："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "请修正以下文本中的语法和拼写错误：",
+                    "target": "请修正以下文本中的语法和拼写错误："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "请更深入、更详细地展开以下想法：",
+                    "target": "请更深入、更详细地展开以下想法："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "支持该项目",
+                    "target": "支持该项目"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "GitHub Sponsors",
+                    "target": "GitHub Sponsors"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "保存 AI 回复",
+                    "target": "保存 AI 回复"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "您想保存到哪里？",
+                    "target": "您想保存到哪里？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "新建笔记",
+                    "target": "新建笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "追加到现有笔记",
+                    "target": "追加到现有笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "在光标处插入",
+                    "target": "在光标处插入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "登录",
+                    "target": "登录"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "使用您的账户登录。完成后，此窗口将自动关闭并刷新您的聊天。",
+                    "target": "使用您的账户登录。完成后，此窗口将自动关闭并刷新您的聊天。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "我已登录（完成）",
+                    "target": "我已登录（完成）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Ollama 本地",
+                    "target": "Ollama 本地"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "未找到模型",
+                    "target": "未找到模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "欢迎使用本地 AI",
+                    "target": "欢迎使用本地 AI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "完全私密，直接在您的机器上运行。",
+                    "target": "完全私密，直接在您的机器上运行。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "由 Ollama API 提供支持，位于 ",
+                    "target": "由 Ollama API 提供支持，位于 "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Ollama 未运行？",
+                    "target": "Ollama 未运行？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "[生成已停止]",
+                    "target": "[生成已停止]"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "全部清除",
+                    "target": "全部清除"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "无法加载 AI 服务。",
+                    "target": "无法加载 AI 服务。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "请检查您的连接，并确保已启用 Obsidian 的网页查看器。",
+                    "target": "请检查您的连接，并确保已启用 Obsidian 的网页查看器。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "模板…",
+                    "target": "模板…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "添加上下文",
+                    "target": "添加上下文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "添加",
+                    "target": "添加"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "复制",
+                    "target": "复制"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "保存",
+                    "target": "保存"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "切换 AI 服务",
+                    "target": "切换 AI 服务"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "发送所选内容",
+                    "target": "发送所选内容"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "构建上下文",
+                    "target": "构建上下文"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "保存回复",
+                    "target": "保存回复"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "分屏视图",
+                    "target": "分屏视图"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "自定义工具",
+                    "target": "自定义工具"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setPlaceholder(\"选择模板…\")",
+                    "target": "setPlaceholder(\"选择模板…\")"
+                },
+                {
+                    "source": "Notice(\"请先选择一些文本。\")",
+                    "target": "Notice(\"请先选择一些文本。\")"
+                },
+                {
+                    "source": "Notice(\"未配置提示词模板 — 请在设置中添加一个。\")",
+                    "target": "Notice(\"未配置提示词模板 — 请在设置中添加一个。\")"
+                },
+                {
+                    "source": "appendText(\"舍不得您走。如果您有空，请\")",
+                    "target": "appendText(\"舍不得您走。如果您有空，请\")"
+                },
+                {
+                    "source": "appendText(\"——这有助于我们改进。您可以跳过。\")",
+                    "target": "appendText(\"——这有助于我们改进。您可以跳过。\")"
+                },
+                {
+                    "source": "setName(\"AI 服务\")",
+                    "target": "setName(\"AI 服务\")"
+                },
+                {
+                    "source": "setDesc(\"在服务选择器中显示。\")",
+                    "target": "setDesc(\"在服务选择器中显示。\")"
+                },
+                {
+                    "source": "setName(\"Ollama API URL\")",
+                    "target": "setName(\"Ollama API URL\")"
+                },
+                {
+                    "source": "setName(\"外观与行为\")",
+                    "target": "setName(\"外观与行为\")"
+                },
+                {
+                    "source": "setName(\"主题\")",
+                    "target": "setName(\"主题\")"
+                },
+                {
+                    "source": "setDesc(\"标题栏配色方案 — 自动跟随 Obsidian。\")",
+                    "target": "setDesc(\"标题栏配色方案 — 自动跟随 Obsidian。\")"
+                },
+                {
+                    "source": "setName(\"默认服务\")",
+                    "target": "setName(\"默认服务\")"
+                },
+                {
+                    "source": "setDesc(\"聊天面板首次打开时加载哪个 AI。\")",
+                    "target": "setDesc(\"聊天面板首次打开时加载哪个 AI。\")"
+                },
+                {
+                    "source": "setName(\"默认分屏面板服务\")",
+                    "target": "setName(\"默认分屏面板服务\")"
+                },
+                {
+                    "source": "setDesc(\"默认在分屏面板中打开哪个 AI。\")",
+                    "target": "setDesc(\"默认在分屏面板中打开哪个 AI。\")"
+                },
+                {
+                    "source": "setName(\"启动时打开\")",
+                    "target": "setName(\"启动时打开\")"
+                },
+                {
+                    "source": "setDesc(\"Obsidian 启动时恢复聊天面板。\")",
+                    "target": "setDesc(\"Obsidian 启动时恢复聊天面板。\")"
+                },
+                {
+                    "source": "setName(\"自动刷新（分钟）\")",
+                    "target": "setName(\"自动刷新（分钟）\")"
+                },
+                {
+                    "source": "setDesc(\"空闲达到指定分钟数后自动静默刷新。0 表示关闭。\")",
+                    "target": "setDesc(\"空闲达到指定分钟数后自动静默刷新。0 表示关闭。\")"
+                },
+                {
+                    "source": "setName(\"打开分屏面板\")",
+                    "target": "setName(\"打开分屏面板\")"
+                },
+                {
+                    "source": "setDesc(\"打开另一个聊天面板——每个面板都会记住自己的服务。\")",
+                    "target": "setDesc(\"打开另一个聊天面板——每个面板都会记住自己的服务。\")"
+                },
+                {
+                    "source": "setButtonText(\"打开\")",
+                    "target": "setButtonText(\"打开\")"
+                },
+                {
+                    "source": "setName(\"上下文与笔记\")",
+                    "target": "setName(\"上下文与笔记\")"
+                },
+                {
+                    "source": "setName(\"将选中文本发送给 AI\")",
+                    "target": "setName(\"将选中文本发送给 AI\")"
+                },
+                {
+                    "source": "setDesc(\"允许将编辑器中选中的文本注入当前 AI 服务。\")",
+                    "target": "setDesc(\"允许将编辑器中选中的文本注入当前 AI 服务。\")"
+                },
+                {
+                    "source": "setName(\"打开面板时自动添加当前笔记\")",
+                    "target": "setName(\"打开面板时自动添加当前笔记\")"
+                },
+                {
+                    "source": "setDesc(\"打开聊天面板时自动将当前笔记添加到上下文。\")",
+                    "target": "setDesc(\"打开聊天面板时自动将当前笔记添加到上下文。\")"
+                },
+                {
+                    "source": "setName(\"去除前置元数据\")",
+                    "target": "setName(\"去除前置元数据\")"
+                },
+                {
+                    "source": "setDesc(\"将笔记作为上下文发送前，先移除其中的 YAML — 块。\")",
+                    "target": "setDesc(\"将笔记作为上下文发送前，先移除其中的 YAML — 块。\")"
+                },
+                {
+                    "source": "setName(\"发送后自动清除上下文\")",
+                    "target": "setName(\"发送后自动清除上下文\")"
+                },
+                {
+                    "source": "setDesc(\"点击添加后清除所有上下文项。\")",
+                    "target": "setDesc(\"点击添加后清除所有上下文项。\")"
+                },
+                {
+                    "source": "setName(\"上下文前缀\")",
+                    "target": "setName(\"上下文前缀\")"
+                },
+                {
+                    "source": "setDesc(\"每次发送上下文时附加在开头的文本。留空则按原样发送笔记。\")",
+                    "target": "setDesc(\"每次发送上下文时附加在开头的文本。留空则按原样发送笔记。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"例如：以下是我的笔记，请帮我：\")",
+                    "target": "setPlaceholder(\"例如：以下是我的笔记，请帮我：\")"
+                },
+                {
+                    "source": "setName(\"最大上下文长度\")",
+                    "target": "setName(\"最大上下文长度\")"
+                },
+                {
+                    "source": "setDesc(\"发送给 AI 的上下文字符数限制。\")",
+                    "target": "setDesc(\"发送给 AI 的上下文字符数限制。\")"
+                },
+                {
+                    "source": "setName(\"保存文件夹\")",
+                    "target": "setName(\"保存文件夹\")"
+                },
+                {
+                    "source": "setDesc(\"保存按钮所创建笔记的存放文件夹。\")",
+                    "target": "setDesc(\"保存按钮所创建笔记的存放文件夹。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"AI 笔记\")",
+                    "target": "setPlaceholder(\"AI 笔记\")"
+                },
+                {
+                    "source": "setButtonText(\"打开文件夹\")",
+                    "target": "setButtonText(\"打开文件夹\")"
+                },
+                {
+                    "source": "setTooltip(\"在文件资源管理器中显示\")",
+                    "target": "setTooltip(\"在文件资源管理器中显示\")"
+                },
+                {
+                    "source": "setName(\"按日期分文件夹保存\")",
+                    "target": "setName(\"按日期分文件夹保存\")"
+                },
+                {
+                    "source": "setName(\"自动格式化 AI 回复\")",
+                    "target": "setName(\"自动格式化 AI 回复\")"
+                },
+                {
+                    "source": "setDesc(\"将 AI 回复保存到您的仓库时，重建其中的表格和代码块。\")",
+                    "target": "setDesc(\"将 AI 回复保存到您的仓库时，重建其中的表格和代码块。\")"
+                },
+                {
+                    "source": "setName(\"自定义服务\")",
+                    "target": "setName(\"自定义服务\")"
+                },
+                {
+                    "source": "setName(\"添加自定义服务\")",
+                    "target": "setName(\"添加自定义服务\")"
+                },
+                {
+                    "source": "setDesc(\"通过 URL 添加任何 AI 工具——它会出现在服务选择器中。\")",
+                    "target": "setDesc(\"通过 URL 添加任何 AI 工具——它会出现在服务选择器中。\")"
+                },
+                {
+                    "source": "setButtonText(\"+ 添加\")",
+                    "target": "setButtonText(\"+ 添加\")"
+                },
+                {
+                    "source": "setPlaceholder(\"标签\")",
+                    "target": "setPlaceholder(\"标签\")"
+                },
+                {
+                    "source": "setPlaceholder(\"输入 URL…\")",
+                    "target": "setPlaceholder(\"输入 URL…\")"
+                },
+                {
+                    "source": "Notice(\"已存在使用此 URL 的自定义服务。\")",
+                    "target": "Notice(\"已存在使用此 URL 的自定义服务。\")"
+                },
+                {
+                    "source": "setTooltip(\"移除\")",
+                    "target": "setTooltip(\"移除\")"
+                },
+                {
+                    "source": "setName(\"提示词模板\")",
+                    "target": "setName(\"提示词模板\")"
+                },
+                {
+                    "source": "setName(\"添加模板\")",
+                    "target": "setName(\"添加模板\")"
+                },
+                {
+                    "source": "setDesc(\"一键提示词，将文本注入当前活动的 AI 服务。变量：{{selection}}、{{title}}、{{path}}、{{tags}}、{{date}}。\")",
+                    "target": "setDesc(\"一键提示词，将文本注入当前活动的 AI 服务。变量：{{selection}}、{{title}}、{{path}}、{{tags}}、{{date}}。\")"
+                },
+                {
+                    "source": "setDesc(\"暂无模板——添加一个以开始使用。\")",
+                    "target": "setDesc(\"暂无模板——添加一个以开始使用。\")"
+                },
+                {
+                    "source": "setName(`Template ${l+1}`)",
+                    "target": "setName(`Template ${l+1}`)"
+                },
+                {
+                    "source": "setPlaceholder(\"标题（例如：总结）\")",
+                    "target": "setPlaceholder(\"标题（例如：总结）\")"
+                },
+                {
+                    "source": "setTooltip(\"删除模板\")",
+                    "target": "setTooltip(\"删除模板\")"
+                },
+                {
+                    "source": "setName(\"提示词\")",
+                    "target": "setName(\"提示词\")"
+                },
+                {
+                    "source": "setDesc(\"插入到 AI 输入框中的文本。\")",
+                    "target": "setDesc(\"插入到 AI 输入框中的文本。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"提示文本…\")",
+                    "target": "setPlaceholder(\"提示文本…\")"
+                },
+                {
+                    "source": "setName(\"浏览器与身份验证\")",
+                    "target": "setName(\"浏览器与身份验证\")"
+                },
+                {
+                    "source": "setName(\"自定义 User-Agent\")",
+                    "target": "setName(\"自定义 User-Agent\")"
+                },
+                {
+                    "source": "setDesc(\"覆写浏览器 user-agent 字符串。留空以使用真实的 Chrome 桌面浏览器模拟。\")",
+                    "target": "setDesc(\"覆写浏览器 user-agent 字符串。留空以使用真实的 Chrome 桌面浏览器模拟。\")"
+                },
+                {
+                    "source": "setButtonText(\"重置为 Chrome\")",
+                    "target": "setButtonText(\"重置为 Chrome\")"
+                },
+                {
+                    "source": "Notice(\"User-Agent 已重置为默认 Chrome。\")",
+                    "target": "Notice(\"User-Agent 已重置为默认 Chrome。\")"
+                },
+                {
+                    "source": "setName(\"清除 AI 浏览器数据\")",
+                    "target": "setName(\"清除 AI 浏览器数据\")"
+                },
+                {
+                    "source": "setDesc(\"清除嵌入式 AI 网页会话的 cookie、缓存和存储。当登录或会话损坏时很有用。\")",
+                    "target": "setDesc(\"清除嵌入式 AI 网页会话的 cookie、缓存和存储。当登录或会话损坏时很有用。\")"
+                },
+                {
+                    "source": "setButtonText(\"清除缓存和 Cookie\")",
+                    "target": "setButtonText(\"清除缓存和 Cookie\")"
+                },
+                {
+                    "source": "Notice(\"AI 浏览器缓存和 Cookie 已清除。\")",
+                    "target": "Notice(\"AI 浏览器缓存和 Cookie 已清除。\")"
+                },
+                {
+                    "source": "Notice(\"无法在此环境中清除浏览器会话。\")",
+                    "target": "Notice(\"无法在此环境中清除浏览器会话。\")"
+                },
+                {
+                    "source": "setPlaceholder(\"按名称或内容搜索笔记…\")",
+                    "target": "setPlaceholder(\"按名称或内容搜索笔记…\")"
+                },
+                {
+                    "source": "setPlaceholder(\"输入以搜索文件夹…\")",
+                    "target": "setPlaceholder(\"输入以搜索文件夹…\")"
+                },
+                {
+                    "source": "setPlaceholder(\"输入以搜索笔记…\")",
+                    "target": "setPlaceholder(\"输入以搜索笔记…\")"
+                },
+                {
+                    "source": "Notice(\"编辑器中没有打开任何笔记——请先打开笔记并光标定位，然后重试。\")",
+                    "target": "Notice(\"编辑器中没有打开任何笔记——请先打开笔记并光标定位，然后重试。\")"
+                },
+                {
+                    "source": "Notice(\"已插入到光标处。\")",
+                    "target": "Notice(\"已插入到光标处。\")"
+                },
+                {
+                    "source": "Notice(`已保存到 ${l.path}`)",
+                    "target": "Notice(`已保存到 ${l.path}`)"
+                },
+                {
+                    "source": "error(\"OmniChat：保存笔记失败\",s),new k.Notice(\"无法保存笔记 — 请查看控制台了解详情。\")",
+                    "target": "error(\"OmniChat：保存笔记失败\",s),new k.Notice(\"无法保存笔记 — 请查看控制台了解详情。\")"
+                },
+                {
+                    "source": "Notice(`已追加到 ${s.path}`)",
+                    "target": "Notice(`已追加到 ${s.path}`)"
+                },
+                {
+                    "source": "error(\"OmniChat：追加到笔记失败\",e),new k.Notice(\"无法追加到笔记 — 请查看控制台了解详情。\")",
+                    "target": "error(\"OmniChat：追加到笔记失败\",e),new k.Notice(\"无法追加到笔记 — 请查看控制台了解详情。\")"
+                },
+                {
+                    "source": "Notice(\"登录成功。\")",
+                    "target": "Notice(\"登录成功。\")"
+                },
+                {
+                    "source": "Notice(\"正在使用已登录会话重新加载聊天…\")",
+                    "target": "Notice(\"正在使用已登录会话重新加载聊天…\")"
+                },
+                {
+                    "source": "Notice(\"未选择模型或 Ollama 未运行。\")",
+                    "target": "Notice(\"未选择模型或 Ollama 未运行。\")"
+                },
+                {
+                    "source": "setTitle(\"当前笔记\")",
+                    "target": "setTitle(\"当前笔记\")"
+                },
+                {
+                    "source": "setTitle(\"打开的标签页\")",
+                    "target": "setTitle(\"打开的标签页\")"
+                },
+                {
+                    "source": "setTitle(\"选择笔记…\")",
+                    "target": "setTitle(\"选择笔记…\")"
+                },
+                {
+                    "source": "setTitle(\"选择文件夹…\")",
+                    "target": "setTitle(\"选择文件夹…\")"
+                },
+                {
+                    "source": "Notice(\"没有活动文件。\")",
+                    "target": "Notice(\"没有活动文件。\")"
+                },
+                {
+                    "source": "Notice(\"已在上下文中。\")",
+                    "target": "Notice(\"已在上下文中。\")"
+                },
+                {
+                    "source": "Notice(`\"${e.basename}\" 已在上下文中。`)",
+                    "target": "Notice(`\"${e.basename}\" 已在上下文中。`)"
+                },
+                {
+                    "source": "Notice(`已将 \"${e.basename}\" 添加到 OmniChat 上下文。`)",
+                    "target": "Notice(`已将 \"${e.basename}\" 添加到 OmniChat 上下文。`)"
+                },
+                {
+                    "source": "Notice(\"没有打开的 Markdown 文件。\")",
+                    "target": "Notice(\"没有打开的 Markdown 文件。\")"
+                },
+                {
+                    "source": "Notice(`Added ${t} file${t!==1?\"s\":\"\"} to context.`)",
+                    "target": "Notice(`Added ${t} file${t!==1?\"s\":\"\"} to context.`)"
+                },
+                {
+                    "source": "Notice(\"所有打开的文件均已在上下文中。\")",
+                    "target": "Notice(\"所有打开的文件均已在上下文中。\")"
+                },
+                {
+                    "source": "Notice(\"此模板为空 — 请在设置中编辑。\")",
+                    "target": "Notice(\"此模板为空 — 请在设置中编辑。\")"
+                },
+                {
+                    "source": "Notice(\"模板已复制 — 使用 Cmd+V / Ctrl+V 粘贴。\")",
+                    "target": "Notice(\"模板已复制 — 使用 Cmd+V / Ctrl+V 粘贴。\")"
+                },
+                {
+                    "source": "Notice(\"无法插入或复制模板。\")",
+                    "target": "Notice(\"无法插入或复制模板。\")"
+                },
+                {
+                    "source": "Notice(\"请先向上下文添加一些笔记。\")",
+                    "target": "Notice(\"请先向上下文添加一些笔记。\")"
+                },
+                {
+                    "source": "Notice(\"未找到可读的笔记。\")",
+                    "target": "Notice(\"未找到可读的笔记。\")"
+                },
+                {
+                    "source": "Notice(\"上下文已截断 — 已达上限。\")",
+                    "target": "Notice(\"上下文已截断 — 已达上限。\")"
+                },
+                {
+                    "source": "Notice(\"上下文已粘贴到聊天中。\")",
+                    "target": "Notice(\"上下文已粘贴到聊天中。\")"
+                },
+                {
+                    "source": "Notice(\"上下文已复制 — 使用 Cmd+V / Ctrl+V 粘贴。\")",
+                    "target": "Notice(\"上下文已复制 — 使用 Cmd+V / Ctrl+V 粘贴。\")"
+                },
+                {
+                    "source": "error(\"OmniChat：添加上下文失败\",t),new m.Notice(\"无法读取一个或多个笔记 — 请查看控制台了解详情。\")",
+                    "target": "error(\"OmniChat：添加上下文失败\",t),new m.Notice(\"无法读取一个或多个笔记 — 请查看控制台了解详情。\")"
+                },
+                {
+                    "source": "Notice(\"上下文已复制到剪贴板。\")",
+                    "target": "Notice(\"上下文已复制到剪贴板。\")"
+                },
+                {
+                    "source": "error(\"OmniChat：复制上下文失败\",e),new m.Notice(\"无法复制上下文 — 请查看控制台了解详情。\")",
+                    "target": "error(\"OmniChat：复制上下文失败\",e),new m.Notice(\"无法复制上下文 — 请查看控制台了解详情。\")"
+                },
+                {
+                    "source": "Notice(\"请先在聊天中选择要保存的文本。\")",
+                    "target": "Notice(\"请先在聊天中选择要保存的文本。\")"
+                },
+                {
+                    "source": "Notice(\"所选内容已发送给 AI。\")",
+                    "target": "Notice(\"所选内容已发送给 AI。\")"
+                },
+                {
+                    "source": "Notice(\"所选内容已复制 — 使用 Cmd+V / Ctrl+V 粘贴。\")",
+                    "target": "Notice(\"所选内容已复制 — 使用 Cmd+V / Ctrl+V 粘贴。\")"
+                },
+                {
+                    "source": "Notice(\"无法发送或复制所选内容。\")",
+                    "target": "Notice(\"无法发送或复制所选内容。\")"
+                },
+                {
+                    "source": "setTitle(\"添加到 OmniChat 上下文\")",
+                    "target": "setTitle(\"添加到 OmniChat 上下文\")"
+                },
+                {
+                    "source": "setTitle(\"将选中文本发送给 AI\")",
+                    "target": "setTitle(\"将选中文本发送给 AI\")"
+                },
+                {
+                    "source": "Notice(\"未启用任何 AI 服务 — 请在 OmniChat 设置中启用一个。\")",
+                    "target": "Notice(\"未启用任何 AI 服务 — 请在 OmniChat 设置中启用一个。\")"
+                },
+                {
+                    "source": "Notice(`已切换到 ${n.label}`)",
+                    "target": "Notice(`已切换到 ${n.label}`)"
+                },
+                {
+                    "source": "name:\"打开\"",
+                    "target": "name:\"打开\""
+                },
+                {
+                    "source": "name:`Open ${s.label}`",
+                    "target": "name:`Open ${s.label}`"
+                },
+                {
+                    "source": "name:\"打开分屏面板\"",
+                    "target": "name:\"打开分屏面板\""
+                },
+                {
+                    "source": "name:\"将选中文本发送给 AI\"",
+                    "target": "name:\"将选中文本发送给 AI\""
+                },
+                {
+                    "source": "name:\"切换侧边栏\"",
+                    "target": "name:\"切换侧边栏\""
+                },
+                {
+                    "source": "name:\"切换到下一个 AI 服务\"",
+                    "target": "name:\"切换到下一个 AI 服务\""
+                },
+                {
+                    "source": "name:\"将当前笔记添加到上下文\"",
+                    "target": "name:\"将当前笔记添加到上下文\""
+                },
+                {
+                    "source": "name:\"清除所有上下文\"",
+                    "target": "name:\"清除所有上下文\""
+                },
+                {
+                    "source": "name:\"保存 AI 回复\"",
+                    "target": "name:\"保存 AI 回复\""
+                },
+                {
+                    "source": "name:\"使用模板发送选中内容\"",
+                    "target": "name:\"使用模板发送选中内容\""
+                },
+                {
+                    "source": "text:\"发送反馈\"",
+                    "target": "text:\"发送反馈\""
+                },
+                {
+                    "source": "text:\"反馈将通过浏览器在 OmniChat 反馈页面打开。\"",
+                    "target": "text:\"反馈将通过浏览器在 OmniChat 反馈页面打开。\""
+                },
+                {
+                    "source": "text:\"取消\"",
+                    "target": "text:\"取消\""
+                },
+                {
+                    "source": "text:\"打开反馈表单\"",
+                    "target": "text:\"打开反馈表单\""
+                },
+                {
+                    "source": "text:\"请求新功能\"",
+                    "target": "text:\"请求新功能\""
+                },
+                {
+                    "source": "text:\"功能请求将通过浏览器在 OmniChat 功能请求页面打开。\"",
+                    "target": "text:\"功能请求将通过浏览器在 OmniChat 功能请求页面打开。\""
+                },
+                {
+                    "source": "text:\"打开请求表单\"",
+                    "target": "text:\"打开请求表单\""
+                },
+                {
+                    "source": "text:`${this.version} 的更新内容`",
+                    "target": "text:`${this.version} 的更新内容`"
+                },
+                {
+                    "source": "text:`已从 ${this.previousVersion} 更新。以下是更新日志：`",
+                    "target": "text:`已从 ${this.previousVersion} 更新。以下是更新日志：`"
+                },
+                {
+                    "source": "text:\"在 GitHub 上查看完整发布 →\"",
+                    "target": "text:\"在 GitHub 上查看完整发布 →\""
+                },
+                {
+                    "source": "text:\"关闭\"",
+                    "target": "text:\"关闭\""
+                },
+                {
+                    "source": "text:\"GitHub Issues\"",
+                    "target": "text:\"GitHub Issues\""
+                },
+                {
+                    "source": "text:\"提供反馈\"",
+                    "target": "text:\"提供反馈\""
+                },
+                {
+                    "source": "text:\"要离开 OmniChat 吗？\"",
+                    "target": "text:\"要离开 OmniChat 吗？\""
+                },
+                {
+                    "source": "text:\"分享您的反馈\"",
+                    "target": "text:\"分享您的反馈\""
+                },
+                {
+                    "source": "description:\"在一个侧边栏中即可在 ChatGPT、Claude、Gemini 等之间切换。\"",
+                    "target": "description:\"在一个侧边栏中即可在 ChatGPT、Claude、Gemini 等之间切换。\""
+                },
+                {
+                    "source": "description:\"在笔记中选中文本，直接发送到当前聊天。\"",
+                    "target": "description:\"在笔记中选中文本，直接发送到当前聊天。\""
+                },
+                {
+                    "source": "description:\"添加笔记或文件夹，需要时将其注入聊天中。\"",
+                    "target": "description:\"添加笔记或文件夹，需要时将其注入聊天中。\""
+                },
+                {
+                    "source": "description:\"复制 AI 回复，并将其保存为新笔记或追加到现有笔记中。\"",
+                    "target": "description:\"复制 AI 回复，并将其保存为新笔记或追加到现有笔记中。\""
+                },
+                {
+                    "source": "description:\"打开第二个面板，让两个 AI 工具并排显示。\"",
+                    "target": "description:\"打开第二个面板，让两个 AI 工具并排显示。\""
+                },
+                {
+                    "source": "description:\"通过 URL 添加任何 AI 网站，使其显示在同一个选择器中。\"",
+                    "target": "description:\"通过 URL 添加任何 AI 网站，使其显示在同一个选择器中。\""
+                },
+                {
+                    "source": "text:\"欢迎使用 OmniChat\"",
+                    "target": "text:\"欢迎使用 OmniChat\""
+                },
+                {
+                    "source": "text:\"把您喜爱的 AI 聊天——ChatGPT、Claude、Gemini 等——集中到一个 Obsidian 侧边栏中。留在笔记里，让 AI 来到您身边。\"",
+                    "target": "text:\"把您喜爱的 AI 聊天——ChatGPT、Claude、Gemini 等——集中到一个 Obsidian 侧边栏中。留在笔记里，让 AI 来到您身边。\""
+                },
+                {
+                    "source": "text:\"稍后再说\"",
+                    "target": "text:\"稍后再说\""
+                },
+                {
+                    "source": "text:\"看看里面有什么\"",
+                    "target": "text:\"看看里面有什么\""
+                },
+                {
+                    "source": "text:\"您可以做什么\"",
+                    "target": "text:\"您可以做什么\""
+                },
+                {
+                    "source": "text:\"快速了解核心功能——您可以随时从功能区或设置中探索其余内容。\"",
+                    "target": "text:\"快速了解核心功能——您可以随时从功能区或设置中探索其余内容。\""
+                },
+                {
+                    "source": "text:\"提示：\"",
+                    "target": "text:\"提示：\""
+                },
+                {
+                    "source": "text:\"从功能区（消息图标）或设置 → 第三方插件 → OmniChat 打开 OmniChat。\"",
+                    "target": "text:\"从功能区（消息图标）或设置 → 第三方插件 → OmniChat 打开 OmniChat。\""
+                },
+                {
+                    "source": "text:\"返回\"",
+                    "target": "text:\"返回\""
+                },
+                {
+                    "source": "text:\"打开 OmniChat\"",
+                    "target": "text:\"打开 OmniChat\""
+                },
+                {
+                    "source": "text:\"在 GitHub 上创建 Issue\"",
+                    "target": "text:\"在 GitHub 上创建 Issue\""
+                },
+                {
+                    "source": "text:\"选择类型 — 将在浏览器中打开。\"",
+                    "target": "text:\"选择类型 — 将在浏览器中打开。\""
+                },
+                {
+                    "source": "text:`请简明扼要地总结以下笔记：`",
+                    "target": "text:`请简明扼要地总结以下笔记：`"
+                },
+                {
+                    "source": "text:`请修正以下文本中的语法和拼写错误：`",
+                    "target": "text:`请修正以下文本中的语法和拼写错误：`"
+                },
+                {
+                    "source": "text:`请更深入、更详细地展开以下想法：`",
+                    "target": "text:`请更深入、更详细地展开以下想法：`"
+                },
+                {
+                    "source": "text:\"支持该项目\"",
+                    "target": "text:\"支持该项目\""
+                },
+                {
+                    "source": "text:\"GitHub Sponsors\"",
+                    "target": "text:\"GitHub Sponsors\""
+                },
+                {
+                    "source": "text:\"·\"",
+                    "target": "text:\"·\""
+                },
+                {
+                    "source": "text:\"保存 AI 回复\"",
+                    "target": "text:\"保存 AI 回复\""
+                },
+                {
+                    "source": "text:\"您想保存到哪里？\"",
+                    "target": "text:\"您想保存到哪里？\""
+                },
+                {
+                    "source": "text:\"新建笔记\"",
+                    "target": "text:\"新建笔记\""
+                },
+                {
+                    "source": "text:\"追加到现有笔记\"",
+                    "target": "text:\"追加到现有笔记\""
+                },
+                {
+                    "source": "text:\"在光标处插入\"",
+                    "target": "text:\"在光标处插入\""
+                },
+                {
+                    "source": "text:\"登录\"",
+                    "target": "text:\"登录\""
+                },
+                {
+                    "source": "text:\"使用您的账户登录。完成后，此窗口将自动关闭并刷新您的聊天。\"",
+                    "target": "text:\"使用您的账户登录。完成后，此窗口将自动关闭并刷新您的聊天。\""
+                },
+                {
+                    "source": "text:\"我已登录（完成）\"",
+                    "target": "text:\"我已登录（完成）\""
+                },
+                {
+                    "source": "text:\"Ollama 本地\"",
+                    "target": "text:\"Ollama 本地\""
+                },
+                {
+                    "source": "text:\"未找到模型\"",
+                    "target": "text:\"未找到模型\""
+                },
+                {
+                    "source": "text:\"欢迎使用本地 AI\"",
+                    "target": "text:\"欢迎使用本地 AI\""
+                },
+                {
+                    "source": "text:\"完全私密，直接在您的机器上运行。\"",
+                    "target": "text:\"完全私密，直接在您的机器上运行。\""
+                },
+                {
+                    "source": "text:\"由 Ollama API 提供支持，位于 \"",
+                    "target": "text:\"由 Ollama API 提供支持，位于 \""
+                },
+                {
+                    "source": "text:\"Ollama 未运行？\"",
+                    "target": "text:\"Ollama 未运行？\""
+                },
+                {
+                    "source": "text:\"[生成已停止]\"",
+                    "target": "text:\"[生成已停止]\""
+                },
+                {
+                    "source": "text:`连接 Ollama 时出错：${c}`",
+                    "target": "text:`连接 Ollama 时出错：${c}`"
+                },
+                {
+                    "source": "text:\"全部清除\"",
+                    "target": "text:\"全部清除\""
+                },
+                {
+                    "source": "text:\"无法加载 AI 服务。\"",
+                    "target": "text:\"无法加载 AI 服务。\""
+                },
+                {
+                    "source": "text:\"请检查您的连接，并确保已启用 Obsidian 的网页查看器。\"",
+                    "target": "text:\"请检查您的连接，并确保已启用 Obsidian 的网页查看器。\""
+                },
+                {
+                    "source": "text:\"↺\"",
+                    "target": "text:\"↺\""
+                },
+                {
+                    "source": "text:\"模板…\"",
+                    "target": "text:\"模板…\""
+                },
+                {
+                    "source": "text:\"添加上下文\"",
+                    "target": "text:\"添加上下文\""
+                },
+                {
+                    "source": "text:\"添加\"",
+                    "target": "text:\"添加\""
+                },
+                {
+                    "source": "text:\"复制\"",
+                    "target": "text:\"复制\""
+                },
+                {
+                    "source": "text:\"保存\"",
+                    "target": "text:\"保存\""
+                },
+                {
+                    "source": "text:\"×\"",
+                    "target": "text:\"×\""
+                },
+                {
+                    "source": "textContent = ''",
+                    "target": "textContent = ''"
+                }
+            ]
+        }
+    }
+}
