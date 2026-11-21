@@ -1,0 +1,15 @@
+[
+    {
+        "id": "S6a9PZOXp1U0vN4xp3M5lyULRlMJPwao",
+        "plugin": "aibrowser-chat",
+        "language": "zh-cn",
+        "version": "1.7.5",
+        "supported_versions": "1.7.5",
+        "title": "OmniChat",
+        "description": "OmniChat Simplified Chinese Localization",
+        "hash": "6a2bd3cf6a2bd3cf6a2bd3cf6a2bd3cf",
+        "created_at": "2026-11-21T14:19:35.108Z",
+        "updated_at": "2026-11-21T14:19:35.108Z",
+        "type": "plugin"
+    }
+]
