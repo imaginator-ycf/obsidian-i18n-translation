@@ -304,7 +304,7 @@
                     "type": "CallExpression",
                     "name": "setName",
                     "source": "Ollama API URL",
-                    "target": "Ollama API URL"
+                    "target": "Ollama API 地址"
                 },
                 {
                     "type": "CallExpression",
@@ -1457,6 +1457,1248 @@
                     "name": "title",
                     "source": "Custom tools",
                     "target": "自定义工具"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "placeholder",
+                    "source": "Ask your vault anything… (Shift+Enter for newline)",
+                    "target": "向你的仓库提问…（Shift+Enter 换行）"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Rename conversation",
+                    "target": "重命名对话"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "New conversation",
+                    "target": "新建对话"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Chat history",
+                    "target": "聊天记录"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Toggle ask vault: automatically search and ground answers in your Obsidian notes",
+                    "target": "切换询问仓库：自动搜索并以你的 Obsidian 笔记为依据生成回答"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Agent ready",
+                    "target": "智能体已就绪"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Start new chat",
+                    "target": "开始新聊天"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Save conversation to note",
+                    "target": "将对话保存为笔记"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Check connection / reload models",
+                    "target": "检查连接 / 重新加载模型"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Rename",
+                    "target": "重命名"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Delete",
+                    "target": "删除"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Working directory: ${s}",
+                    "target": "工作目录：${s}"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Copy to clipboard",
+                    "target": "复制到剪贴板"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Insert at cursor in active document",
+                    "target": "在当前文档光标处插入"
+                },
+                {
+                    "type": "AssignmentExpression",
+                    "name": "title",
+                    "source": "Save response as note in vault",
+                    "target": "将回复保存为库中的笔记"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "browser",
+                    "target": "浏览器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Browser AI (web embedding)",
+                    "target": "浏览器 AI（网页嵌入）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "agent",
+                    "target": "智能体"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Agent CLI & API (coding GUI)",
+                    "target": "智能体 CLI 与 API（编程 GUI）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Browser AI",
+                    "target": "浏览器 AI"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "addOption",
+                    "source": "Agent CLI & API GUI",
+                    "target": "Agent CLI 与 API GUI"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "OmniChat: Failed to save chat history to",
+                    "target": "OmniChat：无法将聊天记录保存到"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Open panel",
+                    "target": "打开面板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Scan & auto-detect",
+                    "target": "扫描并自动检测"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Scanning…",
+                    "target": "正在扫描…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Run diagnostics",
+                    "target": "运行诊断"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Testing…",
+                    "target": "正在测试…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setButtonText",
+                    "source": "Re-run diagnostics",
+                    "target": "重新运行诊断"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Mode for the split panel when first opened.",
+                    "target": "分屏面板首次打开时的模式。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Quick prompts with variable tags: {{selection}}, {{title}}, {{path}}, {{tags}}, {{date}}.",
+                    "target": "快捷提示词，支持变量标签：{{selection}}、{{title}}、{{path}}、{{tags}}、{{date}}。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Vault folder where notes created via the save button are stored.",
+                    "target": "存放通过保存按钮创建的笔记的库文件夹。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Save into daily subfolders (e.g. AI notes/2026-09-27/response.md).",
+                    "target": "保存到每日子文件夹中（例如 AI notes/2026-09-27/response.md）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Which web AI opens in the split panel in browser mode.",
+                    "target": "浏览器模式下在分屏面板中打开的网页 AI。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Show in the browser service selector.",
+                    "target": "在浏览器服务选择器中显示。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Embed any web AI or app URL in the browser portal.",
+                    "target": "在浏览器门户中嵌入任意网页 AI 或应用 URL。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Overrides the browser user-agent string. Leave blank for Chrome desktop emulation.",
+                    "target": "覆盖浏览器 User-Agent 字符串。留空则使用 Chrome 桌面版模拟。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Clears cookies, cache, and session storage for embedded AI web sessions.",
+                    "target": "清除嵌入式 AI 网页会话的 Cookie、缓存和会话存储。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Which CLI or API engine powers the native agent studio.",
+                    "target": "原生智能体工作室由哪个 CLI 或 API 引擎驱动。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Automatically scan your system for Claude Code, Antigravity, and Codex CLI executables.",
+                    "target": "自动扫描系统中是否存在 Claude Code、Antigravity 和 Codex CLI 可执行文件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Path to Claude binary. Leave blank to auto-detect from path.",
+                    "target": "Claude 可执行文件路径。留空则自动从系统路径中检测。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Path to agy binary. Leave blank to auto-detect from path.",
+                    "target": "agy 可执行文件路径。留空则自动从系统路径中检测。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Path to Codex or opencode executable.",
+                    "target": "Codex 或 opencode 可执行文件路径。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Command string used when the custom agent CLI engine is selected.",
+                    "target": "选择自定义代理 CLI 引擎时使用的命令字符串。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Run the CLI in the root of your Obsidian vault so agents can read and write notes directly.",
+                    "target": "在 Obsidian 库的根目录中运行 CLI，以便代理可直接读写笔记。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Absolute path to the working directory for CLI executions.",
+                    "target": "CLI 执行时所用工作目录的绝对路径。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Pass --dangerously-skip-permissions to CLI agents for autonomous tool execution.",
+                    "target": "为 CLI 代理传入 --dangerously-skip-permissions，以允许自主执行工具。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Extra arguments passed to the CLI process.",
+                    "target": "传递给 CLI 进程的额外参数。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Additional environment variables injected into the process (one key=value per line).",
+                    "target": "注入进程的额外环境变量（每行一个 key=value）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "API key for direct streaming with Claude 3.7 / 3.5 Sonnet.",
+                    "target": "用于直接与 Claude 3.7 / 3.5 Sonnet 进行流式传输的 API 密钥。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Model identifier for Anthropic API.",
+                    "target": "Anthropic API 的模型标识符。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "API key for OpenAI GPT-4o, Codex or compatible endpoint.",
+                    "target": "OpenAI GPT-4o、Codex 或兼容端点的 API 密钥。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Base URL for OpenAI or compatible endpoints (e.g. DeepSeek, Groq, LM Studio).",
+                    "target": "OpenAI 或兼容端点（例如 DeepSeek、Groq、LM Studio）的基础 URL。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Model identifier for OpenAI API.",
+                    "target": "OpenAI API 的模型标识符。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Base URL for your local or remote Ollama instance (default: http://127.0.0.1:11434).",
+                    "target": "本地或远程 Ollama 实例的基础 URL（默认：http://127.0.0.1:11434）。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Display collapsible reasoning thought blocks from thinking models and CLI agents.",
+                    "target": "显示思考模型与 CLI 智能体生成的可折叠推理内容块。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Automatically scroll down as new tokens and responses stream in.",
+                    "target": "随着新 token 与响应流式输出，自动向下滚动。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Verify Node.js runtime, CLI installations, paths, and environment.",
+                    "target": "验证 Node.js 运行时、CLI 安装、路径与环境。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Interface & modes",
+                    "target": "界面与模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Split panel",
+                    "target": "分屏面板"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default split panel mode",
+                    "target": "默认分屏面板模式"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Vault saving & formatting",
+                    "target": "库保存与格式化"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Appearance & startup",
+                    "target": "外观与启动"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Custom web services",
+                    "target": "自定义 Web 服务"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Browser emulation & session",
+                    "target": "浏览器模拟与会话"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Active agent engine",
+                    "target": "当前代理引擎"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Default agent engine",
+                    "target": "默认代理引擎"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "CLI engine configuration",
+                    "target": "CLI 引擎配置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-detect CLI paths",
+                    "target": "自动检测 CLI 路径"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Claude Code CLI path",
+                    "target": "Claude Code CLI 路径"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Antigravity CLI path",
+                    "target": "Antigravity CLI 路径"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "OpenAI Codex CLI path",
+                    "target": "OpenAI Codex CLI 路径"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Custom CLI command",
+                    "target": "自定义 CLI 命令"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Use vault as working directory",
+                    "target": "将 vault 用作工作目录"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Custom working directory",
+                    "target": "自定义工作目录"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-approve tool permissions",
+                    "target": "自动批准工具权限"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Custom CLI arguments",
+                    "target": "自定义 CLI 参数"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "CLI environment variables",
+                    "target": "CLI 环境变量"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Direct API providers",
+                    "target": "直连 API 提供商"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Anthropic API key",
+                    "target": "Anthropic API 密钥"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Anthropic model",
+                    "target": "Anthropic 模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "OpenAI API key",
+                    "target": "OpenAI API 密钥"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "OpenAI base URL",
+                    "target": "OpenAI 基础 URL"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "OpenAI model",
+                    "target": "OpenAI 模型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Agent GUI display & experience",
+                    "target": "Agent GUI 显示与体验"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Show reasoning & thoughts",
+                    "target": "显示推理与思考内容"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Auto-scroll chat",
+                    "target": "自动滚动聊天"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "System & CLI health check",
+                    "target": "系统与 CLI 健康检查"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Run diagnostics",
+                    "target": "运行诊断"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Support & community",
+                    "target": "支持与社区"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Title",
+                    "target": "标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "URL",
+                    "target": "网址"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Codex",
+                    "target": "Codex"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter command…",
+                    "target": "输入命令…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter directory path…",
+                    "target": "输入目录路径…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter arguments…",
+                    "target": "输入参数…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter key=value pairs (one per line)…",
+                    "target": "输入键=值对（每行一组）…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter API key…",
+                    "target": "输入 API 密钥…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter model name…",
+                    "target": "输入模型名称…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter base URL…",
+                    "target": "输入基础 URL…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "Enter Ollama URL…",
+                    "target": "输入 Ollama URL…"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Click again to confirm clear all",
+                    "target": "再次点击以确认清空全部"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Clear all history",
+                    "target": "清空全部历史记录"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Copied!",
+                    "target": "已复制！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setText",
+                    "source": "Copy",
+                    "target": "复制"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "OmniChat: Could not read chats.json, starting fresh",
+                    "target": "OmniChat：无法读取 chats.json，将重新开始"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "warn",
+                    "source": "OmniChat: Vault query search failed",
+                    "target": "OmniChat：Vault 查询搜索失败"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Folder \"${i}\" does not exist yet.",
+                    "target": "文件夹“${i}”尚不存在。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Saved to ${c.path}",
+                    "target": "已保存至 ${c.path}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Started new chat.",
+                    "target": "已开始新对话。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "All chat history cleared.",
+                    "target": "已清除所有聊天记录。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Ask vault active: OmniChat will search and ground answers in your notes.",
+                    "target": "Ask Vault 已激活：OmniChat 将在你的笔记中搜索，并让回答以笔记内容为依据。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Connection check complete.",
+                    "target": "连接检查完成。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Copied response to clipboard.",
+                    "target": "已将回复复制到剪贴板。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Inserted into active document.",
+                    "target": "已插入到当前文档。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No active Markdown editor to insert into.",
+                    "target": "当前没有可插入内容的 Markdown 编辑器。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Inserted code into active note.",
+                    "target": "已将代码插入当前笔记。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No active note found.",
+                    "target": "未找到当前笔记。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Retrieved ${w.length} vault note${w.length>1?\"s\":\"\"} for context.",
+                    "target": "已检索 ${w.length} 篇库内笔记${w.length>1?\"s\":\"\"}作为上下文。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Generation stopped.",
+                    "target": "生成已停止。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "No messages to export.",
+                    "target": "没有可导出的消息。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Saved note to ${n}",
+                    "target": "笔记已保存至 ${n}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Failed to save note: ${String(t)}",
+                    "target": "保存笔记失败：${String(t)}"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Context added to agent chat.",
+                    "target": "已将上下文添加至智能体对话。"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "Switched to ${t===\"browser\"?\"Browser AI\":\"Agent CLI & API\"} mode",
+                    "target": "已切换到 ${t===\"browser\"?\"Browser AI\":\"Agent CLI & API\"} 模式"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Rename chat",
+                    "target": "重命名对话"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "New chat",
+                    "target": "新建对话"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Chat history",
+                    "target": "对话历史"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Select model",
+                    "target": "选择模型"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Send prompt",
+                    "target": "发送指令"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Save chat to note",
+                    "target": "将聊天保存到笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Check connection",
+                    "target": "检查连接"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Close history",
+                    "target": "关闭历史记录"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Delete chat",
+                    "target": "删除聊天"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Copy text",
+                    "target": "复制文本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Insert in active note",
+                    "target": "插入到当前笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "aria-label",
+                    "source": "Save as new note",
+                    "target": "另存为新笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "oc-update-notes markdown-rendered",
+                    "target": "oc-update-notes markdown-rendered"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "oc-diag-badge is-ok",
+                    "target": "oc-diag-badge is-ok"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "agent-dock-pill-btn agent-perm-pill",
+                    "target": "agent-dock-pill-btn agent-perm-pill"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "agent-status-dot is-idle",
+                    "target": "agent-status-dot is-idle"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "agent-history-item-action-btn is-delete",
+                    "target": "agent-history-item-action-btn is-delete"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "agent-bubble-body markdown-rendered",
+                    "target": "agent-bubble-body markdown-rendered"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "agent-tool-pre agent-tool-output",
+                    "target": "agent-tool-pre agent-tool-output"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "cls",
+                    "source": "vc-reload-btn vc-nav-btn",
+                    "target": "vc-reload-btn vc-nav-btn"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Autonomous coding agent CLI by Anthropic",
+                    "target": "Anthropic 打造的自主编程智能体 CLI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Google Deepmind agentic CLI coding assistant",
+                    "target": "Google DeepMind 的智能体 CLI 编程助手"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Agentic coding and terminal assistant",
+                    "target": "智能体编程与终端助手"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Direct API streaming with Claude 3.7 / 3.5 Sonnet",
+                    "target": "通过 Claude 3.7 / 3.5 Sonnet 直接进行 API 流式传输"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Direct API streaming with GPT-4o, o3-mini or compatible endpoint",
+                    "target": "通过 GPT-4o、o3-mini 或兼容端点直接进行 API 流式传输"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Privacy-focused local LLMs running on your machine",
+                    "target": "注重隐私的本地大语言模型，直接在您的设备上运行"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "desc",
+                    "source": "Run your own custom CLI tool, agent or script",
+                    "target": "运行您自定义的 CLI 工具、智能体或脚本"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Visual WYSIWYG diagram and flowchart editor for Mermaid in Obsidian.",
+                    "target": "用于 Obsidian 的 Mermaid 可视化所见即所得图表和流程图编辑器。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "description",
+                    "source": "Publish notes as a website and protect your vault with automatic private backups.",
+                    "target": "将笔记发布为网站，并通过自动私密备份保护您的仓库。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "CLI requires Obsidian desktop (Node.js environment)",
+                    "target": "CLI 需要 Obsidian 桌面版（Node.js 环境）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Executable \"${a}\" not found in PATH or standard directories.",
+                    "target": "在 PATH 或标准目录中未找到可执行文件 \"${a}\"。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "Version check timed out",
+                    "target": "版本检查超时"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "error",
+                    "source": "child_process module unavailable",
+                    "target": "child_process 模块不可用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Claude Code CLI",
+                    "target": "Claude Code CLI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Antigravity CLI",
+                    "target": "Antigravity CLI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "OpenAI Codex CLI",
+                    "target": "OpenAI Codex CLI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Anthropic Claude API",
+                    "target": "Anthropic Claude API"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "OpenAI / Codex API",
+                    "target": "OpenAI / Codex API"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Ollama Local API",
+                    "target": "Ollama 本地 API"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Custom Agent CLI",
+                    "target": "自定义 Agent CLI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Diagnostics & help",
+                    "target": "诊断与帮助"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Ask Vault: What notes mention...",
+                    "target": "询问 Vault：哪些笔记提到了……"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Summarize active note",
+                    "target": "总结当前笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Find notes with TODO",
+                    "target": "查找含 TODO 的笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Draft note outline",
+                    "target": "起草笔记大纲"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Coding agents & APIs",
+                    "target": "编码智能体与 API"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "label",
+                    "source": "Browser AI services",
+                    "target": "浏览器 AI 服务"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open agent GUI",
+                    "target": "打开智能体 GUI"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Toggle between browser and agent mode",
+                    "target": "在浏览器和智能体模式之间切换"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open Claude Code agent",
+                    "target": "打开 Claude Code 智能体"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open Antigravity CLI agent",
+                    "target": "打开 Antigravity CLI 智能体"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Open OpenAI Codex agent",
+                    "target": "打开 OpenAI Codex 智能体"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Show release notes",
+                    "target": "显示发行说明"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Mermaid Flow",
+                    "target": "Mermaid 流程图"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "NoteFlare",
+                    "target": "NoteFlare"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "tool",
+                    "target": "工具"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "placeholder",
+                    "source": "Filter chat history…",
+                    "target": "筛选聊天记录…"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Other plugins from the creator",
+                    "target": "创作者的其他插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "View plugin",
+                    "target": "查看插件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "View on GitHub →",
+                    "target": "在 GitHub 上查看 →"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Release notes for v${this.version} are not available offline or have not been published to GitHub yet.",
+                    "target": "v${this.version} 的发行说明在离线状态下不可用，或尚未发布到 GitHub。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "View releases on GitHub →",
+                    "target": "在 GitHub 上查看发行版 →"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "OmniChat environment diagnostics",
+                    "target": "OmniChat 环境诊断"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": " Desktop Node environment: ${n?\"Available (Electron)\":\"Not available (Mobile or Sandbox)\"}",
+                    "target": " 桌面端 Node 环境：${n?\"Available (Electron)\":\"Not available (Mobile or Sandbox)\"}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": " Vault root working directory: ${r||\"In-memory adapter\"}",
+                    "target": " Vault 根工作目录：${r||\"In-memory adapter\"}"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Release notes",
+                    "target": "发布说明"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "New Chat",
+                    "target": "新建聊天"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Ask Vault",
+                    "target": "向知识库提问"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Vault search active",
+                    "target": "知识库搜索已启用"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Chat History",
+                    "target": "聊天记录"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "New chat",
+                    "target": "新建聊天"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Clear all history",
+                    "target": "清除所有历史记录"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Where should we begin?",
+                    "target": "我们从何处开始？"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Ask questions, query your vault notes, or run agent workspace tasks.",
+                    "target": "提出问题、查询你的知识库笔记，或运行智能体工作区任务。"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "What notes mention ",
+                    "target": "哪些笔记提到了 "
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Summarize my active note",
+                    "target": "总结我的当前笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "List all notes with TODO or action items",
+                    "target": "列出所有包含 TODO 或行动项的笔记"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Draft a clear outline for ",
+                    "target": "为以下内容草拟清晰大纲："
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Reasoning & thoughts",
+                    "target": "推理与思考"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "CLI diagnostics (stderr)",
+                    "target": "CLI 诊断（stderr）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Insert",
+                    "target": "插入"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "Reload",
+                    "target": "重新加载"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "type",
+                    "source": "text",
+                    "target": "文本"
                 }
             ],
             "regex": [
